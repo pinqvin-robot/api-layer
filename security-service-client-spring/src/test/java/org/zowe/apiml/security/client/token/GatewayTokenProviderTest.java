@@ -10,14 +10,14 @@
 
 package org.zowe.apiml.security.client.token;
 
-import org.zowe.apiml.security.client.service.GatewaySecurityService;
-import org.zowe.apiml.security.common.token.QueryResponse;
-import org.zowe.apiml.security.common.token.TokenAuthentication;
 import org.junit.Rule;
 import org.junit.Test;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 import org.springframework.security.core.Authentication;
+import org.zowe.apiml.security.client.service.GatewaySecurityService;
+import org.zowe.apiml.security.common.token.QueryResponse;
+import org.zowe.apiml.security.common.token.TokenAuthentication;
 
 import java.util.Date;
 

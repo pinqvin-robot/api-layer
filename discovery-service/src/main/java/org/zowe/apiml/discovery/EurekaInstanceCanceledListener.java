@@ -9,11 +9,11 @@
  */
 package org.zowe.apiml.discovery;
 
-import org.zowe.apiml.util.EurekaUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cloud.netflix.eureka.server.event.EurekaInstanceCanceledEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
+import org.zowe.apiml.util.EurekaUtils;
 /**
  * Called by Eureka when the service instance is unregistered (/cancelled)
  */

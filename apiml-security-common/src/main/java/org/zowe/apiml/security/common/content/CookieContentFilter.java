@@ -9,12 +9,12 @@
  */
 package org.zowe.apiml.security.common.content;
 
-import org.zowe.apiml.security.common.config.AuthConfigurationProperties;
-import org.zowe.apiml.security.common.error.ResourceAccessExceptionHandler;
-import org.zowe.apiml.security.common.token.TokenAuthentication;
 import org.springframework.security.authentication.AbstractAuthenticationToken;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
+import org.zowe.apiml.security.common.config.AuthConfigurationProperties;
+import org.zowe.apiml.security.common.error.ResourceAccessExceptionHandler;
+import org.zowe.apiml.security.common.token.TokenAuthentication;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;

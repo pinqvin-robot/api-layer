@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 
 import {CLEAR_FILTER, FILTER_TEXT} from "../constants/filter-constants";
-import {filterText, clear} from "./filter-actions";
+import {clear, filterText} from "./filter-actions";
 
 describe('>>> Selected Service actions tests', () => {
     it('should create actions to clear text', () => {

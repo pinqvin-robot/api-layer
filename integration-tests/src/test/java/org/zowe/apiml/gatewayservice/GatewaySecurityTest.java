@@ -14,7 +14,8 @@ import io.restassured.response.Response;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpHeaders;
-import org.zowe.apiml.util.categories.TestsNotMeantForZowe;import org.zowe.apiml.util.config.ConfigReader;
+import org.zowe.apiml.util.categories.TestsNotMeantForZowe;
+import org.zowe.apiml.util.config.ConfigReader;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -9,20 +9,7 @@
  */
 package org.zowe.apiml.tomcat;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-
-import java.io.IOException;
-
-import javax.net.ssl.SSLHandshakeException;
-
-import org.zowe.apiml.security.HttpsConfig;
-import org.zowe.apiml.security.HttpsConfigError;
-import org.zowe.apiml.security.HttpsConfigError.ErrorCode;
-import org.zowe.apiml.security.HttpsFactory;
-import org.zowe.apiml.security.SecurityTestUtils;
-
+import lombok.extern.slf4j.Slf4j;
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.startup.Tomcat;
 import org.apache.http.HttpResponse;
@@ -31,8 +18,16 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.util.EntityUtils;
 import org.junit.Before;
 import org.junit.Test;
+import org.zowe.apiml.security.HttpsConfig;
+import org.zowe.apiml.security.HttpsConfigError;
+import org.zowe.apiml.security.HttpsConfigError.ErrorCode;
+import org.zowe.apiml.security.HttpsFactory;
+import org.zowe.apiml.security.SecurityTestUtils;
 
-import lombok.extern.slf4j.Slf4j;
+import javax.net.ssl.SSLHandshakeException;
+import java.io.IOException;
+
+import static org.junit.Assert.*;
 
 @Slf4j
 public class TomcatHttpsTest {

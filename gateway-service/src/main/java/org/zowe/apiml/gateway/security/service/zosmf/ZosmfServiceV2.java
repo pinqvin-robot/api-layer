@@ -9,26 +9,20 @@
  */
 package org.zowe.apiml.gateway.security.service.zosmf;
 
-import org.zowe.apiml.security.common.config.AuthConfigurationProperties;
-import org.zowe.apiml.security.common.error.ServiceNotAccessibleException;
-import org.zowe.apiml.security.common.token.TokenNotValidException;
-
-import lombok.extern.slf4j.Slf4j;
-
-import org.zowe.apiml.gateway.security.service.ZosmfService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.netflix.discovery.DiscoveryClient;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.annotation.Order;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
+import org.zowe.apiml.gateway.security.service.ZosmfService;
+import org.zowe.apiml.security.common.config.AuthConfigurationProperties;
+import org.zowe.apiml.security.common.error.ServiceNotAccessibleException;
+import org.zowe.apiml.security.common.token.TokenNotValidException;
 
 /**
  * This implementation is used for version z/OSMF which can support authentication

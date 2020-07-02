@@ -9,12 +9,12 @@
  */
 package org.zowe.apiml.client.ws;
 
-import org.zowe.apiml.message.core.MessageType;
-import org.zowe.apiml.message.log.ApimlLogger;
-import org.zowe.apiml.product.logging.annotations.InjectApimlLogger;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.config.annotation.WebSocketConfigurer;
 import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry;
+import org.zowe.apiml.message.core.MessageType;
+import org.zowe.apiml.message.log.ApimlLogger;
+import org.zowe.apiml.product.logging.annotations.InjectApimlLogger;
 
 @Component
 public class DiscoverableClientWebSocketConfigurer implements WebSocketConfigurer {

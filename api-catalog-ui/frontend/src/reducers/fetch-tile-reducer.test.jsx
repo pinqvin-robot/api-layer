@@ -3,9 +3,9 @@ import tilesReducer from './fetch-tile-reducer';
 import {
     FETCH_TILES_FAILED,
     FETCH_TILES_REQUEST,
+    FETCH_TILES_RETRY,
     FETCH_TILES_STOP,
     FETCH_TILES_SUCCESS,
-    FETCH_TILES_RETRY,
 } from '../constants/catalog-tile-constants';
 
 describe('>>> Tile reducer tests', () => {

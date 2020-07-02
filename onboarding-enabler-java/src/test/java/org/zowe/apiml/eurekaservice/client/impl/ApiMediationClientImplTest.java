@@ -9,23 +9,25 @@
  */
 package org.zowe.apiml.eurekaservice.client.impl;
 
+import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.EurekaClientConfig;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.ExpectedException;
 import org.mockito.Mockito;
+import org.zowe.apiml.config.ApiInfo;
 import org.zowe.apiml.eurekaservice.client.ApiMediationClient;
 import org.zowe.apiml.eurekaservice.client.EurekaClientConfigProvider;
 import org.zowe.apiml.eurekaservice.client.EurekaClientProvider;
 import org.zowe.apiml.eurekaservice.client.config.*;
 import org.zowe.apiml.eurekaservice.client.util.ApiMediationServiceConfigReader;
-import org.zowe.apiml.config.ApiInfo;
 import org.zowe.apiml.eurekaservice.client.util.EurekaInstanceConfigCreator;
 import org.zowe.apiml.exception.MetadataValidationException;
 import org.zowe.apiml.exception.ServiceDefinitionException;
-import com.netflix.appinfo.InstanceInfo;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.ExpectedException;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import static org.hamcrest.core.Is.isA;
 import static org.junit.Assert.*;

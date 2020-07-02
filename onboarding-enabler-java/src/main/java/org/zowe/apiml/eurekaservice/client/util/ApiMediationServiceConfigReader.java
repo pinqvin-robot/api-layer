@@ -9,22 +9,24 @@
  */
 package org.zowe.apiml.eurekaservice.client.util;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import org.zowe.apiml.eurekaservice.client.config.ApiMediationServiceConfig;
 import org.zowe.apiml.exception.ServiceDefinitionException;
 import org.zowe.apiml.util.FileUtils;
 import org.zowe.apiml.util.ObjectUtil;
 import org.zowe.apiml.util.StringUtils;
 import org.zowe.apiml.util.UrlUtils;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 
 import javax.servlet.ServletContext;
-import java.io.*;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.UnknownHostException;
-import java.util.*;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Map;
 
 import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_ABSENT;
 import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;

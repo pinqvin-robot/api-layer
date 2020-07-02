@@ -9,8 +9,6 @@
  */
 package org.zowe.apiml.gateway.config;
 
-import org.zowe.apiml.product.gateway.GatewayConfigProperties;
-
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -20,6 +18,7 @@ import org.springframework.cloud.netflix.zuul.filters.ZuulProperties;
 import org.springframework.cloud.netflix.zuul.filters.route.SimpleHostRoutingFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.zowe.apiml.product.gateway.GatewayConfigProperties;
 
 @Configuration
 public class GatewayConfig {

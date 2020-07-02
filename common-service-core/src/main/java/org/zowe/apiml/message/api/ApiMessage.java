@@ -9,10 +9,10 @@
  */
 package org.zowe.apiml.message.api;
 
-import org.zowe.apiml.message.core.MessageType;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.EqualsAndHashCode;
 import lombok.Setter;
+import org.zowe.apiml.message.core.MessageType;
 
 import java.util.List;
 

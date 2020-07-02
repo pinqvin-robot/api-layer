@@ -9,17 +9,15 @@
  */
 package org.zowe.apiml.gateway.error.check;
 
-import org.zowe.apiml.gateway.error.ErrorUtils;
-import org.zowe.apiml.message.api.ApiMessageView;
-import org.zowe.apiml.message.core.MessageService;
 import com.netflix.zuul.exception.ZuulException;
-
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.zowe.apiml.gateway.error.ErrorUtils;
+import org.zowe.apiml.message.api.ApiMessageView;
+import org.zowe.apiml.message.core.MessageService;
 
 import javax.net.ssl.SSLException;
 import javax.servlet.http.HttpServletRequest;

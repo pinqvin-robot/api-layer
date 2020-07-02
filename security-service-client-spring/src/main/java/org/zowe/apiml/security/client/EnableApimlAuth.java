@@ -9,9 +9,9 @@
  */
 package org.zowe.apiml.security.client;
 
-import org.zowe.apiml.security.client.config.SecurityServiceConfiguration;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.zowe.apiml.security.client.config.SecurityServiceConfiguration;
 
 import java.lang.annotation.*;
 

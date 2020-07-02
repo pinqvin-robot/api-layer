@@ -5,7 +5,7 @@ import {
     REFRESH_STATIC_APIS_ERROR,
     REFRESH_STATIC_APIS_SUCCESS
 } from "../constants/refresh-static-apis-constants";
-import {refreshStaticApisSuccess, refreshStaticApisError, clearError, refreshedStaticApi} from "./refresh-static-apis-actions";
+import {clearError, refreshStaticApisError, refreshStaticApisSuccess} from "./refresh-static-apis-actions";
 import {ApiError, MessageType} from "../constants/error-constants";
 
 describe('>>> Refresh static apis actions tests', () => {

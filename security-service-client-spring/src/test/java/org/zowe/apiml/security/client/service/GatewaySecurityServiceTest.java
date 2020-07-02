@@ -9,12 +9,6 @@
  */
 package org.zowe.apiml.security.client.service;
 
-import org.zowe.apiml.security.client.handler.RestResponseHandler;
-import org.zowe.apiml.security.common.config.AuthConfigurationProperties;
-import org.zowe.apiml.security.common.token.QueryResponse;
-import org.zowe.apiml.security.common.token.TokenNotValidException;
-import org.zowe.apiml.product.gateway.GatewayClient;
-import org.zowe.apiml.product.gateway.GatewayConfigProperties;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.junit.Before;
@@ -25,6 +19,12 @@ import org.springframework.http.*;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
+import org.zowe.apiml.product.gateway.GatewayClient;
+import org.zowe.apiml.product.gateway.GatewayConfigProperties;
+import org.zowe.apiml.security.client.handler.RestResponseHandler;
+import org.zowe.apiml.security.common.config.AuthConfigurationProperties;
+import org.zowe.apiml.security.common.token.QueryResponse;
+import org.zowe.apiml.security.common.token.TokenNotValidException;
 
 import java.util.Date;
 import java.util.Optional;

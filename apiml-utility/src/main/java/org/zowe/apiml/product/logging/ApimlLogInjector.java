@@ -9,13 +9,13 @@
  */
 package org.zowe.apiml.product.logging;
 
-import org.zowe.apiml.message.log.ApimlLogger;
-import org.zowe.apiml.message.yaml.YamlMessageServiceInstance;
-import org.zowe.apiml.product.logging.annotations.InjectApimlLogger;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ReflectionUtils;
+import org.zowe.apiml.message.log.ApimlLogger;
+import org.zowe.apiml.message.yaml.YamlMessageServiceInstance;
+import org.zowe.apiml.product.logging.annotations.InjectApimlLogger;
 
 import javax.annotation.Nonnull;
 

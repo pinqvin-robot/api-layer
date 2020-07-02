@@ -9,10 +9,10 @@
  */
 package org.zowe.apiml.gateway.security.config;
 
-import org.zowe.apiml.passticket.PassTicketService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.zowe.apiml.passticket.PassTicketService;
 
 /**
  * Registers security related beans

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Button, Text } from 'mineral-ui';
+import React, {Component} from 'react';
+import {Button, Text} from 'mineral-ui';
 import IconChevronLeft from 'mineral-ui-icons/IconChevronLeft';
 
 export default class PageNotFound extends Component {

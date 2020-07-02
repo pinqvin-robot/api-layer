@@ -9,10 +9,10 @@
  */
 package org.zowe.apiml.message.template;
 
-import org.zowe.apiml.message.core.MessageType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.zowe.apiml.message.core.MessageType;
 
 @Data
 @AllArgsConstructor

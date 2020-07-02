@@ -9,12 +9,12 @@
  */
 package org.zowe.apiml.apicatalog.config;
 
-import org.zowe.apiml.message.core.MessageService;
-import org.zowe.apiml.product.gateway.GatewayClient;
-import org.zowe.apiml.product.routing.transform.TransformService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.zowe.apiml.message.core.MessageService;
+import org.zowe.apiml.product.gateway.GatewayClient;
+import org.zowe.apiml.product.routing.transform.TransformService;
 
 /**
  * General configuration of the API Catalog.

@@ -10,12 +10,12 @@
 
 package org.zowe.apiml.message.core;
 
-import org.zowe.apiml.message.dummy.DummyMessageService;
-import org.zowe.apiml.message.template.MessageTemplate;
-import org.zowe.apiml.message.template.MessageTemplates;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+import org.zowe.apiml.message.dummy.DummyMessageService;
+import org.zowe.apiml.message.template.MessageTemplate;
+import org.zowe.apiml.message.template.MessageTemplates;
 
 import java.util.ArrayList;
 import java.util.Arrays;

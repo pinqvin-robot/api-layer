@@ -9,7 +9,6 @@
  */
 package org.zowe.apiml.security.common.content;
 
-import org.zowe.apiml.security.common.error.ResourceAccessExceptionHandler;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.http.HttpHeaders;
@@ -21,6 +20,7 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
+import org.zowe.apiml.security.common.error.ResourceAccessExceptionHandler;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;

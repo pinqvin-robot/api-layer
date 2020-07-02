@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 
-import { CLEAR_SERVICE, SELECT_SERVICE } from '../constants/selected-service-constants';
-import {selectService, clearService} from "./selected-service-actions";
+import {CLEAR_SERVICE, SELECT_SERVICE} from '../constants/selected-service-constants';
+import {clearService, selectService} from "./selected-service-actions";
 
 describe('>>> Selected Service actions tests', () => {
     it('should return selected service', () => {

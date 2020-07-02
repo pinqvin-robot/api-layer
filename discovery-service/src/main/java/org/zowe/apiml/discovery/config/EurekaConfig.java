@@ -9,16 +9,16 @@
  */
 package org.zowe.apiml.discovery.config;
 
-import org.springframework.context.ApplicationContext;
-import org.zowe.apiml.discovery.ApimlInstanceRegistry;
 import com.netflix.discovery.EurekaClient;
 import com.netflix.discovery.EurekaClientConfig;
 import com.netflix.eureka.EurekaServerConfig;
 import com.netflix.eureka.resources.ServerCodecs;
 import org.springframework.cloud.netflix.eureka.server.InstanceRegistryProperties;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.zowe.apiml.discovery.ApimlInstanceRegistry;
 
 /**
  * Configuration to rewrite default Eureka's implementation with custom one

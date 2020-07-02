@@ -2,7 +2,7 @@
 import * as React from 'react';
 // tslint:disable-next-line:no-implicit-dependencies
 import ErrorDialog from "./ErrorDialog";
-import { shallow } from 'enzyme';
+import {shallow} from 'enzyme';
 import jest from 'jest-mock';
 
 describe('>>> ErrorDialog component tests', () => {

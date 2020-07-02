@@ -9,12 +9,6 @@
  */
 package org.zowe.apiml.apicatalog.services.status;
 
-import org.zowe.apiml.apicatalog.model.APIContainer;
-import org.zowe.apiml.apicatalog.services.cached.CachedApiDocService;
-import org.zowe.apiml.apicatalog.services.cached.CachedProductFamilyService;
-import org.zowe.apiml.apicatalog.services.cached.CachedServicesService;
-import org.zowe.apiml.apicatalog.services.status.event.model.ContainerStatusChangeEvent;
-import org.zowe.apiml.apicatalog.services.status.event.model.STATUS_EVENT_TYPE;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.shared.Applications;
 import lombok.NonNull;
@@ -25,6 +19,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.zowe.apiml.apicatalog.model.APIContainer;
+import org.zowe.apiml.apicatalog.services.cached.CachedApiDocService;
+import org.zowe.apiml.apicatalog.services.cached.CachedProductFamilyService;
+import org.zowe.apiml.apicatalog.services.cached.CachedServicesService;
+import org.zowe.apiml.apicatalog.services.status.event.model.ContainerStatusChangeEvent;
+import org.zowe.apiml.apicatalog.services.status.event.model.STATUS_EVENT_TYPE;
 
 import java.util.ArrayList;
 import java.util.Collections;

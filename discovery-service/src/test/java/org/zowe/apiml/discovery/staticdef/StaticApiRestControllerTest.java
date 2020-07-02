@@ -9,8 +9,6 @@
  */
 package org.zowe.apiml.discovery.staticdef;
 
-import org.zowe.apiml.discovery.DiscoveryServiceApplication;
-import org.zowe.apiml.discovery.config.EurekaConfig;
 import com.netflix.appinfo.InstanceInfo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,6 +18,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.zowe.apiml.discovery.DiscoveryServiceApplication;
+import org.zowe.apiml.discovery.config.EurekaConfig;
 
 import java.util.Arrays;
 import java.util.Base64;

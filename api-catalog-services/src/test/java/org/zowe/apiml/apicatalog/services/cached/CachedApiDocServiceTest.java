@@ -9,15 +9,15 @@
  */
 package org.zowe.apiml.apicatalog.services.cached;
 
-import org.zowe.apiml.apicatalog.services.cached.model.ApiDocInfo;
-import org.zowe.apiml.apicatalog.services.status.APIDocRetrievalService;
-import org.zowe.apiml.apicatalog.swagger.TransformApiDocService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.zowe.apiml.apicatalog.services.cached.model.ApiDocInfo;
+import org.zowe.apiml.apicatalog.services.status.APIDocRetrievalService;
+import org.zowe.apiml.apicatalog.swagger.TransformApiDocService;
 
 import static org.mockito.Mockito.when;
 

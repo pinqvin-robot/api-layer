@@ -9,14 +9,6 @@
  */
 package org.zowe.apiml.gateway.error.check;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
-import org.zowe.apiml.gateway.error.ErrorUtils;
-import org.zowe.apiml.gateway.error.InternalServerErrorController;
-import org.zowe.apiml.message.api.ApiMessageView;
-import org.zowe.apiml.message.core.MessageService;
-import org.zowe.apiml.message.yaml.YamlMessageService;
 import com.netflix.zuul.exception.ZuulException;
 import com.netflix.zuul.monitoring.MonitoringHelper;
 import org.junit.BeforeClass;
@@ -24,8 +16,16 @@ import org.junit.Test;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.mock.web.MockHttpServletRequest;
+import org.zowe.apiml.gateway.error.ErrorUtils;
+import org.zowe.apiml.gateway.error.InternalServerErrorController;
+import org.zowe.apiml.message.api.ApiMessageView;
+import org.zowe.apiml.message.core.MessageService;
+import org.zowe.apiml.message.yaml.YamlMessageService;
 
 import java.net.SocketTimeoutException;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class TimeoutErrorCheckTest {
     private static final String TEST_MESSAGE = "Hello";

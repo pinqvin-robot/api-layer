@@ -12,7 +12,6 @@ package org.zowe.apiml.eurekaservice.client.config;
 import com.netflix.appinfo.DataCenterInfo;
 import com.netflix.appinfo.EurekaInstanceConfig;
 import com.netflix.discovery.CommonConstants;
-
 import lombok.Data;
 
 import java.util.Map;

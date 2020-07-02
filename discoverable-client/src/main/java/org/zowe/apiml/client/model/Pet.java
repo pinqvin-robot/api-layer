@@ -9,16 +9,15 @@
  */
 package org.zowe.apiml.client.model;
 
-import org.zowe.apiml.client.model.state.Existing;
-import org.zowe.apiml.client.model.state.New;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import org.zowe.apiml.client.model.state.Existing;
+import org.zowe.apiml.client.model.state.New;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Null;
-
 import java.util.Objects;
 
 /**

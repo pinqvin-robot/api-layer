@@ -1,6 +1,6 @@
-import React, { Component, Suspense } from 'react';
-import { Redirect, Route, Router, Switch } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
+import React, {Component, Suspense} from 'react';
+import {Redirect, Route, Router, Switch} from 'react-router-dom';
+import {ToastContainer} from 'react-toastify';
 import BigShield from '../ErrorBoundary/BigShield/BigShield';
 import ErrorContainer from '../Error/ErrorContainer';
 import '../../webflow.css';
@@ -10,7 +10,7 @@ import PageNotFound from '../PageNotFound/PageNotFound';
 import HeaderContainer from '../Header/HeaderContainer';
 import Spinner from '../Spinner/Spinner';
 import Footer from '../Footer/Footer';
-import { AsyncDashboardContainer, AsyncDetailPageContainer, AsyncLoginContainer } from "./AsyncModules";
+import {AsyncDashboardContainer, AsyncDetailPageContainer, AsyncLoginContainer} from "./AsyncModules";
 
 class App extends Component {
     render() {

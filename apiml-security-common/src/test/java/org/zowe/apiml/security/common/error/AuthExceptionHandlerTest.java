@@ -9,11 +9,6 @@
  */
 package org.zowe.apiml.security.common.error;
 
-import org.zowe.apiml.security.common.token.TokenNotProvidedException;
-import org.zowe.apiml.security.common.token.TokenNotValidException;
-import org.zowe.apiml.message.core.Message;
-import org.zowe.apiml.message.core.MessageService;
-import org.zowe.apiml.message.yaml.YamlMessageService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
 import org.junit.Test;
@@ -31,6 +26,11 @@ import org.springframework.security.authentication.AuthenticationServiceExceptio
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.InsufficientAuthenticationException;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.zowe.apiml.message.core.Message;
+import org.zowe.apiml.message.core.MessageService;
+import org.zowe.apiml.message.yaml.YamlMessageService;
+import org.zowe.apiml.security.common.token.TokenNotProvidedException;
+import org.zowe.apiml.security.common.token.TokenNotValidException;
 
 import javax.servlet.ServletException;
 import java.io.IOException;

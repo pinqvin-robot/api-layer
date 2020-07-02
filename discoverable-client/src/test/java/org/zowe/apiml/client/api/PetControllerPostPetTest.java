@@ -9,10 +9,6 @@
  */
 package org.zowe.apiml.client.api;
 
-import org.zowe.apiml.client.configuration.ApplicationConfiguration;
-import org.zowe.apiml.client.configuration.SpringComponentsConfiguration;
-import org.zowe.apiml.client.model.Pet;
-import org.zowe.apiml.client.service.PetService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,12 +19,13 @@ import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.zowe.apiml.client.configuration.ApplicationConfiguration;
+import org.zowe.apiml.client.configuration.SpringComponentsConfiguration;
+import org.zowe.apiml.client.model.Pet;
+import org.zowe.apiml.client.service.PetService;
 
 import static org.hamcrest.core.Is.is;
-import static org.mockito.Mockito.any;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;

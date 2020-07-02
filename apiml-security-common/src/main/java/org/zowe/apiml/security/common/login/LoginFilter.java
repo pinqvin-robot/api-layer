@@ -9,9 +9,6 @@
  */
 package org.zowe.apiml.security.common.login;
 
-import org.zowe.apiml.security.common.error.AuthMethodNotSupportedException;
-import org.zowe.apiml.security.common.error.ResourceAccessExceptionHandler;
-import org.zowe.apiml.constants.ApimlConstants;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.http.HttpHeaders;
@@ -25,6 +22,9 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
+import org.zowe.apiml.constants.ApimlConstants;
+import org.zowe.apiml.security.common.error.AuthMethodNotSupportedException;
+import org.zowe.apiml.security.common.error.ResourceAccessExceptionHandler;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;

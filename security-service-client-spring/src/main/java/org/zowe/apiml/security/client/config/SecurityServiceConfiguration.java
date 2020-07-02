@@ -9,15 +9,15 @@
  */
 package org.zowe.apiml.security.client.config;
 
-import org.zowe.apiml.product.gateway.GatewayClient;
-import org.zowe.apiml.product.gateway.GatewayInstanceInitializer;
-import org.zowe.apiml.product.instance.lookup.InstanceLookupExecutor;
 import com.netflix.discovery.EurekaClient;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.zowe.apiml.product.gateway.GatewayClient;
+import org.zowe.apiml.product.gateway.GatewayInstanceInitializer;
+import org.zowe.apiml.product.instance.lookup.InstanceLookupExecutor;
 
 /**
  * General configuration of security client

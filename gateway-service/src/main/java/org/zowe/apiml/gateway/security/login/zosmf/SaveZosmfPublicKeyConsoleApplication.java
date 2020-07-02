@@ -10,14 +10,14 @@
 
 package org.zowe.apiml.gateway.security.login.zosmf;
 
-import java.io.FileNotFoundException;
-
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.web.client.ResourceAccessException;
 import org.springframework.web.client.RestTemplate;
 import org.zowe.apiml.security.HttpsConfig;
 import org.zowe.apiml.security.HttpsFactory;
+
+import java.io.FileNotFoundException;
 
 /**
  * Gets z/OSMF public key for JWT validation.

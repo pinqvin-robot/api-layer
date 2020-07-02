@@ -9,13 +9,6 @@
  */
 package org.zowe.apiml.gateway.security.ticket;
 
-import org.zowe.apiml.security.common.ticket.TicketRequest;
-import org.zowe.apiml.security.common.ticket.TicketResponse;
-import org.zowe.apiml.security.common.token.TokenAuthentication;
-import org.zowe.apiml.message.api.ApiMessageView;
-import org.zowe.apiml.message.core.MessageService;
-import org.zowe.apiml.passticket.IRRPassTicketGenerationException;
-import org.zowe.apiml.passticket.PassTicketService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
@@ -25,6 +18,13 @@ import org.springframework.http.MediaType;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.stereotype.Component;
+import org.zowe.apiml.message.api.ApiMessageView;
+import org.zowe.apiml.message.core.MessageService;
+import org.zowe.apiml.passticket.IRRPassTicketGenerationException;
+import org.zowe.apiml.passticket.PassTicketService;
+import org.zowe.apiml.security.common.ticket.TicketRequest;
+import org.zowe.apiml.security.common.ticket.TicketResponse;
+import org.zowe.apiml.security.common.token.TokenAuthentication;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

@@ -9,8 +9,6 @@
  */
 package org.zowe.apiml.client.api;
 
-import org.zowe.apiml.client.configuration.PassTicketConfiguration;
-import org.zowe.apiml.passticket.PassTicketService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,6 +21,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.util.ReflectionTestUtils;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.zowe.apiml.client.configuration.PassTicketConfiguration;
+import org.zowe.apiml.passticket.PassTicketService;
 
 import javax.servlet.ServletException;
 import java.util.Base64;

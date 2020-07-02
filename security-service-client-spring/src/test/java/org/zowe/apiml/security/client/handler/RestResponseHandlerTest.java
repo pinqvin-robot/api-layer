@@ -9,12 +9,6 @@
  */
 package org.zowe.apiml.security.client.handler;
 
-import org.zowe.apiml.security.common.error.AuthMethodNotSupportedException;
-import org.zowe.apiml.security.common.error.ErrorType;
-import org.zowe.apiml.security.common.error.ServiceNotAccessibleException;
-import org.zowe.apiml.security.common.token.TokenNotProvidedException;
-import org.zowe.apiml.security.common.token.TokenNotValidException;
-import org.zowe.apiml.product.gateway.GatewayNotAvailableException;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.http.HttpStatus;
@@ -24,6 +18,12 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.client.ResourceAccessException;
+import org.zowe.apiml.product.gateway.GatewayNotAvailableException;
+import org.zowe.apiml.security.common.error.AuthMethodNotSupportedException;
+import org.zowe.apiml.security.common.error.ErrorType;
+import org.zowe.apiml.security.common.error.ServiceNotAccessibleException;
+import org.zowe.apiml.security.common.token.TokenNotProvidedException;
+import org.zowe.apiml.security.common.token.TokenNotValidException;
 
 
 public class RestResponseHandlerTest {

@@ -9,15 +9,15 @@
  */
 package org.zowe.apiml.passticket;
 
-import org.zowe.apiml.util.ClassOrDefaultProxyUtils;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import org.springframework.test.util.ReflectionTestUtils;
+import org.zowe.apiml.util.ClassOrDefaultProxyUtils;
 
-import static org.zowe.apiml.passticket.PassTicketService.DefaultPassTicketImpl.*;
 import static org.junit.Assert.*;
+import static org.zowe.apiml.passticket.PassTicketService.DefaultPassTicketImpl.*;
 
 @RunWith(JUnit4.class)
 public class PassTicketServiceTest {

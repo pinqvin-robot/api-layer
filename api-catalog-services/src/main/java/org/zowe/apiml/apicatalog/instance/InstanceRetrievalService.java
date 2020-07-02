@@ -9,11 +9,6 @@
  */
 package org.zowe.apiml.apicatalog.instance;
 
-import org.zowe.apiml.apicatalog.discovery.DiscoveryConfigProperties;
-import org.zowe.apiml.message.log.ApimlLogger;
-import org.zowe.apiml.product.instance.InstanceInitializationException;
-import org.zowe.apiml.product.logging.annotations.InjectApimlLogger;
-import org.zowe.apiml.product.registry.ApplicationWrapper;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -27,6 +22,11 @@ import org.springframework.http.*;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import org.zowe.apiml.apicatalog.discovery.DiscoveryConfigProperties;
+import org.zowe.apiml.message.log.ApimlLogger;
+import org.zowe.apiml.product.instance.InstanceInitializationException;
+import org.zowe.apiml.product.logging.annotations.InjectApimlLogger;
+import org.zowe.apiml.product.registry.ApplicationWrapper;
 
 import javax.validation.constraints.NotBlank;
 import java.io.IOException;

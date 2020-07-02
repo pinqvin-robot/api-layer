@@ -10,14 +10,13 @@
 
 package org.zowe.apiml.gateway.security.login.zosmf;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import com.nimbusds.jose.JOSEException;
+import org.junit.jupiter.api.Test;
 
 import java.text.ParseException;
 
-import com.nimbusds.jose.JOSEException;
-
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class JwkToPublicKeyConverterTest {
     @Test

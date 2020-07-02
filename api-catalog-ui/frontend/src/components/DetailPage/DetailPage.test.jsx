@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import * as React from 'react';
 // tslint:disable-next-line:no-implicit-dependencies
-import { mount, shallow } from 'enzyme';
+import {shallow} from 'enzyme';
 import DetailPage from './DetailPage';
 
 const tile = {

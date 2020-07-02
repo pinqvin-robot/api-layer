@@ -9,8 +9,8 @@
  */
 package org.zowe.apiml.apicatalog.services.status.event.model;
 
-import org.zowe.apiml.apicatalog.model.APIService;
 import lombok.Data;
+import org.zowe.apiml.apicatalog.model.APIService;
 
 import java.util.Set;
 

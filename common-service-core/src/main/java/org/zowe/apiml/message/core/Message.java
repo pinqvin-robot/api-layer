@@ -9,11 +9,11 @@
  */
 package org.zowe.apiml.message.core;
 
+import org.apache.commons.text.StringEscapeUtils;
 import org.zowe.apiml.message.api.ApiMessage;
 import org.zowe.apiml.message.api.ApiMessageView;
 import org.zowe.apiml.message.template.MessageTemplate;
 import org.zowe.apiml.util.ObjectUtil;
-import org.apache.commons.text.StringEscapeUtils;
 
 import java.util.Collections;
 import java.util.IllegalFormatConversionException;

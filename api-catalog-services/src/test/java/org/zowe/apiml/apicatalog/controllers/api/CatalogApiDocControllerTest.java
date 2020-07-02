@@ -9,12 +9,12 @@
  */
 package org.zowe.apiml.apicatalog.controllers.api;
 
-import org.zowe.apiml.apicatalog.services.status.APIServiceStatusService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.zowe.apiml.apicatalog.services.status.APIServiceStatusService;
 
 import static org.mockito.Mockito.when;
 

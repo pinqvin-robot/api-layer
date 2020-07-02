@@ -9,13 +9,6 @@
  */
 package org.zowe.apiml.security.common.handler;
 
-import org.zowe.apiml.security.common.error.AuthExceptionHandler;
-import org.zowe.apiml.security.common.error.ErrorType;
-import org.zowe.apiml.security.common.token.TokenExpireException;
-import org.zowe.apiml.constants.ApimlConstants;
-import org.zowe.apiml.message.core.Message;
-import org.zowe.apiml.message.core.MessageService;
-import org.zowe.apiml.message.yaml.YamlMessageService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,6 +21,13 @@ import org.springframework.http.HttpStatus;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.zowe.apiml.constants.ApimlConstants;
+import org.zowe.apiml.message.core.Message;
+import org.zowe.apiml.message.core.MessageService;
+import org.zowe.apiml.message.yaml.YamlMessageService;
+import org.zowe.apiml.security.common.error.AuthExceptionHandler;
+import org.zowe.apiml.security.common.error.ErrorType;
+import org.zowe.apiml.security.common.token.TokenExpireException;
 
 import javax.servlet.ServletException;
 import java.io.IOException;

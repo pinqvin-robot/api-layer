@@ -9,10 +9,6 @@
  */
 package org.zowe.apiml.discovery;
 
-import org.zowe.apiml.product.logging.annotations.EnableApimlLogger;
-import org.zowe.apiml.product.monitoring.LatencyUtilsConfigInitializer;
-import org.zowe.apiml.product.service.ServiceStartupEventHandler;
-import org.zowe.apiml.product.version.BuildInfo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
@@ -20,6 +16,10 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 import org.springframework.cloud.netflix.hystrix.HystrixAutoConfiguration;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.ComponentScan;
+import org.zowe.apiml.product.logging.annotations.EnableApimlLogger;
+import org.zowe.apiml.product.monitoring.LatencyUtilsConfigInitializer;
+import org.zowe.apiml.product.service.ServiceStartupEventHandler;
+import org.zowe.apiml.product.version.BuildInfo;
 
 import javax.annotation.Nonnull;
 

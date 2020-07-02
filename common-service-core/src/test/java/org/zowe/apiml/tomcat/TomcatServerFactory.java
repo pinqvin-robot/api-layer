@@ -9,13 +9,7 @@
  */
 package org.zowe.apiml.tomcat;
 
-import static org.junit.Assert.assertEquals;
-
-import org.zowe.apiml.security.HttpsConfig;
-import org.zowe.apiml.security.HttpsFactory;
-
 import lombok.extern.slf4j.Slf4j;
-
 import org.apache.catalina.Context;
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.Service;
@@ -29,15 +23,18 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.util.EntityUtils;
-
-import java.io.File;
-import java.io.IOException;
-import java.io.Writer;
+import org.zowe.apiml.security.HttpsConfig;
+import org.zowe.apiml.security.HttpsFactory;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
+import java.io.IOException;
+import java.io.Writer;
+
+import static org.junit.Assert.assertEquals;
 
 @Slf4j
 public class TomcatServerFactory {

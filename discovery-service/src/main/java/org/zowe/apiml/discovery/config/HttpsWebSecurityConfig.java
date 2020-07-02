@@ -10,13 +10,6 @@
 
 package org.zowe.apiml.discovery.config;
 
-import org.zowe.apiml.security.client.EnableApimlAuth;
-import org.zowe.apiml.security.client.login.GatewayLoginProvider;
-import org.zowe.apiml.security.client.token.GatewayTokenProvider;
-import org.zowe.apiml.security.common.config.AuthConfigurationProperties;
-import org.zowe.apiml.security.common.config.HandlerInitializer;
-import org.zowe.apiml.security.common.content.BasicContentFilter;
-import org.zowe.apiml.security.common.content.CookieContentFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
@@ -30,6 +23,13 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.zowe.apiml.security.client.EnableApimlAuth;
+import org.zowe.apiml.security.client.login.GatewayLoginProvider;
+import org.zowe.apiml.security.client.token.GatewayTokenProvider;
+import org.zowe.apiml.security.common.config.AuthConfigurationProperties;
+import org.zowe.apiml.security.common.config.HandlerInitializer;
+import org.zowe.apiml.security.common.content.BasicContentFilter;
+import org.zowe.apiml.security.common.content.CookieContentFilter;
 
 import java.util.Collections;
 

@@ -9,8 +9,8 @@
  */
 package org.zowe.apiml.gateway.error.check;
 
-import org.zowe.apiml.message.api.ApiMessageView;
 import org.springframework.http.ResponseEntity;
+import org.zowe.apiml.message.api.ApiMessageView;
 
 import javax.servlet.http.HttpServletRequest;
 

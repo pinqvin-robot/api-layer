@@ -9,9 +9,9 @@
  */
 package org.zowe.apiml.apicatalog.swagger.api;
 
+import lombok.experimental.UtilityClass;
 import org.zowe.apiml.product.constants.CoreService;
 import org.zowe.apiml.product.gateway.GatewayConfigProperties;
-import lombok.experimental.UtilityClass;
 
 @UtilityClass
 public class OpenApiUtil {

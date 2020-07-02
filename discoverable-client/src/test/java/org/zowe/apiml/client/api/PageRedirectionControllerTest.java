@@ -9,9 +9,6 @@
  */
 package org.zowe.apiml.client.api;
 
-import org.zowe.apiml.client.configuration.ApplicationConfiguration;
-import org.zowe.apiml.client.configuration.SpringComponentsConfiguration;
-import org.zowe.apiml.client.model.RedirectLocation;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,6 +18,9 @@ import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.zowe.apiml.client.configuration.ApplicationConfiguration;
+import org.zowe.apiml.client.configuration.SpringComponentsConfiguration;
+import org.zowe.apiml.client.model.RedirectLocation;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.redirectedUrl;

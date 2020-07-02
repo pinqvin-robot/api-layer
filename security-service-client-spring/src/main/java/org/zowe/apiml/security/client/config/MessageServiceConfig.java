@@ -9,10 +9,10 @@
  */
 package org.zowe.apiml.security.client.config;
 
-import org.zowe.apiml.message.core.MessageService;
-import org.zowe.apiml.message.yaml.YamlMessageServiceInstance;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.zowe.apiml.message.core.MessageService;
+import org.zowe.apiml.message.yaml.YamlMessageServiceInstance;
 
 @Configuration
 public class MessageServiceConfig {

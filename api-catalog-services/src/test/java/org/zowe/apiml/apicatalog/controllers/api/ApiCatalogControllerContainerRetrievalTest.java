@@ -9,10 +9,6 @@
  */
 package org.zowe.apiml.apicatalog.controllers.api;
 
-import org.zowe.apiml.apicatalog.controllers.handlers.ApiCatalogControllerExceptionHandler;
-import org.zowe.apiml.apicatalog.services.cached.CachedProductFamilyService;
-import org.zowe.apiml.message.core.MessageService;
-import org.zowe.apiml.message.yaml.YamlMessageService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +18,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.zowe.apiml.apicatalog.controllers.handlers.ApiCatalogControllerExceptionHandler;
+import org.zowe.apiml.apicatalog.services.cached.CachedProductFamilyService;
+import org.zowe.apiml.message.core.MessageService;
+import org.zowe.apiml.message.yaml.YamlMessageService;
 
 import static org.hamcrest.Matchers.hasItem;
 import static org.mockito.Mockito.*;

@@ -9,6 +9,12 @@
  */
 package org.zowe.apiml.client.api;
 
+import io.swagger.annotations.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 import org.zowe.apiml.client.exception.PetIdMismatchException;
 import org.zowe.apiml.client.exception.PetNotFoundException;
 import org.zowe.apiml.client.model.Pet;
@@ -16,12 +22,6 @@ import org.zowe.apiml.client.model.state.Existing;
 import org.zowe.apiml.client.model.state.New;
 import org.zowe.apiml.client.service.PetService;
 import org.zowe.apiml.message.api.ApiMessageView;
-import io.swagger.annotations.*;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;

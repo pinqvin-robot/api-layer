@@ -9,11 +9,11 @@
  */
 package org.zowe.apiml.apicatalog.util;
 
+import com.netflix.appinfo.InstanceInfo;
+import com.netflix.discovery.shared.Application;
 import org.zowe.apiml.apicatalog.model.APIContainer;
 import org.zowe.apiml.apicatalog.model.APIService;
 import org.zowe.apiml.apicatalog.services.cached.CachedServicesService;
-import com.netflix.appinfo.InstanceInfo;
-import com.netflix.discovery.shared.Application;
 
 import java.util.*;
 import java.util.stream.Collectors;

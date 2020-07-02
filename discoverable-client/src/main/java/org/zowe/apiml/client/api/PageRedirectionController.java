@@ -9,7 +9,6 @@
  */
 package org.zowe.apiml.client.api;
 
-import org.zowe.apiml.client.model.RedirectLocation;
 import io.swagger.annotations.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -17,6 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+import org.zowe.apiml.client.model.RedirectLocation;
 
 import javax.servlet.http.HttpServletResponse;
 

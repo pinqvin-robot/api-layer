@@ -9,11 +9,6 @@
  */
 package org.zowe.apiml.gateway.routing;
 
-import org.zowe.apiml.eurekaservice.client.util.EurekaMetadataParser;
-import org.zowe.apiml.product.routing.RoutedServices;
-import org.zowe.apiml.product.routing.RoutedServicesUser;
-import org.zowe.apiml.message.log.ApimlLogger;
-import org.zowe.apiml.product.logging.annotations.InjectApimlLogger;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.netflix.zuul.filters.ZuulProperties;
@@ -21,6 +16,11 @@ import org.springframework.cloud.netflix.zuul.filters.discovery.DiscoveryClientR
 import org.springframework.cloud.netflix.zuul.filters.discovery.ServiceRouteMapper;
 import org.springframework.util.PatternMatchUtils;
 import org.springframework.util.StringUtils;
+import org.zowe.apiml.eurekaservice.client.util.EurekaMetadataParser;
+import org.zowe.apiml.message.log.ApimlLogger;
+import org.zowe.apiml.product.logging.annotations.InjectApimlLogger;
+import org.zowe.apiml.product.routing.RoutedServices;
+import org.zowe.apiml.product.routing.RoutedServicesUser;
 
 import java.util.*;
 

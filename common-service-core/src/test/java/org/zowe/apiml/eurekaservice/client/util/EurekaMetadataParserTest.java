@@ -9,23 +9,23 @@
  */
 package org.zowe.apiml.eurekaservice.client.util;
 
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.ExpectedException;
 import org.zowe.apiml.config.ApiInfo;
 import org.zowe.apiml.exception.MetadataValidationException;
 import org.zowe.apiml.product.routing.RoutedService;
 import org.zowe.apiml.product.routing.RoutedServices;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.ExpectedException;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static org.zowe.apiml.constants.EurekaMetadataDefinition.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsInAnyOrder;
 import static org.junit.Assert.*;
+import static org.zowe.apiml.constants.EurekaMetadataDefinition.*;
 
 public class EurekaMetadataParserTest {
 

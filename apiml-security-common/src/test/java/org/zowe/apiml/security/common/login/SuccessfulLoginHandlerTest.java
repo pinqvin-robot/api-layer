@@ -9,13 +9,13 @@
  */
 package org.zowe.apiml.security.common.login;
 
-import org.zowe.apiml.security.common.config.AuthConfigurationProperties;
-import org.zowe.apiml.security.common.token.TokenAuthentication;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.http.HttpStatus;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;
+import org.zowe.apiml.security.common.config.AuthConfigurationProperties;
+import org.zowe.apiml.security.common.token.TokenAuthentication;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;

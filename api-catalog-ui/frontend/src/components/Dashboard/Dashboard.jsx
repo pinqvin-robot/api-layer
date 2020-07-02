@@ -1,5 +1,5 @@
-import { Text, Button } from 'mineral-ui';
-import React, { Component } from 'react';
+import {Button, Text} from 'mineral-ui';
+import React, {Component} from 'react';
 import SearchCriteria from '../Search/SearchCriteria';
 import Shield from '../ErrorBoundary/Shield/Shield';
 import './Dashboard.css';
@@ -7,6 +7,7 @@ import Tile from '../Tile/Tile';
 import Spinner from '../Spinner/Spinner';
 import formatError from '../Error/ErrorFormatter';
 import ErrorDialog from "../Error/ErrorDialog";
+
 export default class Dashboard extends Component {
 
     componentDidMount() {

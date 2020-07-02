@@ -9,13 +9,12 @@
  */
 package org.zowe.apiml.client.service.impl;
 
+import org.springframework.stereotype.Service;
 import org.zowe.apiml.client.exception.PetNotFoundException;
 import org.zowe.apiml.client.model.Pet;
 import org.zowe.apiml.client.service.PetService;
-import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;

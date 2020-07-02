@@ -10,9 +10,6 @@
 package org.zowe.apiml.product.instance.lookup;
 
 
-import org.zowe.apiml.product.constants.CoreService;
-import org.zowe.apiml.product.instance.InstanceInitializationException;
-import org.zowe.apiml.product.instance.InstanceNotFoundException;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.EurekaClient;
 import com.netflix.discovery.shared.Application;
@@ -21,6 +18,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.zowe.apiml.product.constants.CoreService;
+import org.zowe.apiml.product.instance.InstanceInitializationException;
+import org.zowe.apiml.product.instance.InstanceNotFoundException;
 
 import java.util.Collections;
 import java.util.HashMap;

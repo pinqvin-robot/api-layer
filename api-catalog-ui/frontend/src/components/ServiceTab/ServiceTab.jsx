@@ -1,5 +1,5 @@
-import { Link, Text, Tooltip } from 'mineral-ui';
-import React, { Component } from 'react';
+import {Link, Text, Tooltip} from 'mineral-ui';
+import React, {Component} from 'react';
 import Shield from '../ErrorBoundary/Shield/Shield';
 import '../Swagger/Swagger.css';
 import SwaggerContainer from '../Swagger/SwaggerContainer';

@@ -9,14 +9,14 @@
  */
 package org.zowe.apiml.security.common.content;
 
-import org.zowe.apiml.security.common.error.ResourceAccessExceptionHandler;
-import org.zowe.apiml.constants.ApimlConstants;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.AbstractAuthenticationToken;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
+import org.zowe.apiml.constants.ApimlConstants;
+import org.zowe.apiml.security.common.error.ResourceAccessExceptionHandler;
 
 import javax.servlet.http.HttpServletRequest;
 import java.nio.charset.StandardCharsets;

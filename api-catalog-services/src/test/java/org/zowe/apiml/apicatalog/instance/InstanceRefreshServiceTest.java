@@ -10,13 +10,6 @@
 package org.zowe.apiml.apicatalog.instance;
 
 
-import org.zowe.apiml.apicatalog.model.APIContainer;
-import org.zowe.apiml.apicatalog.services.cached.CachedProductFamilyService;
-import org.zowe.apiml.apicatalog.services.cached.CachedServicesService;
-import org.zowe.apiml.apicatalog.util.ContainerServiceMockUtil;
-import org.zowe.apiml.apicatalog.util.ContainerServiceState;
-import org.zowe.apiml.product.constants.CoreService;
-import org.zowe.apiml.product.gateway.GatewayClient;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.shared.Application;
 import com.netflix.discovery.shared.Applications;
@@ -26,19 +19,21 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.zowe.apiml.apicatalog.model.APIContainer;
+import org.zowe.apiml.apicatalog.services.cached.CachedProductFamilyService;
+import org.zowe.apiml.apicatalog.services.cached.CachedServicesService;
+import org.zowe.apiml.apicatalog.util.ContainerServiceMockUtil;
+import org.zowe.apiml.apicatalog.util.ContainerServiceState;
+import org.zowe.apiml.product.constants.CoreService;
+import org.zowe.apiml.product.gateway.GatewayClient;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.stream.Collectors;
 
+import static org.mockito.Mockito.*;
 import static org.zowe.apiml.constants.EurekaMetadataDefinition.CATALOG_ID;
-import static org.mockito.Mockito.any;
-import static org.mockito.Mockito.anyString;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.Silent.class)
 public class InstanceRefreshServiceTest {

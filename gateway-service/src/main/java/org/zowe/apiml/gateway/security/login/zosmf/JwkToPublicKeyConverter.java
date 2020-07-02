@@ -9,28 +9,8 @@
  */
 package org.zowe.apiml.gateway.security.login.zosmf;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.StringReader;
-import java.io.StringWriter;
-import java.math.BigInteger;
-import java.security.KeyStore;
-import java.security.KeyStoreException;
-import java.security.NoSuchAlgorithmException;
-import java.security.PrivateKey;
-import java.security.PublicKey;
-import java.security.UnrecoverableKeyException;
-import java.security.cert.Certificate;
-import java.security.cert.CertificateException;
-import java.security.cert.CertificateFactory;
-import java.text.ParseException;
-import java.util.Base64;
-import java.util.Calendar;
-import java.util.Date;
-
 import com.nimbusds.jose.JOSEException;
 import com.nimbusds.jose.jwk.JWKSet;
-
 import org.bouncycastle.asn1.DERPrintableString;
 import org.bouncycastle.asn1.x500.RDN;
 import org.bouncycastle.asn1.x500.X500Name;
@@ -50,6 +30,20 @@ import org.bouncycastle.operator.OperatorCreationException;
 import org.bouncycastle.operator.jcajce.JcaContentSignerBuilder;
 import org.zowe.apiml.security.HttpsConfig;
 import org.zowe.apiml.security.SecurityUtils;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.StringReader;
+import java.io.StringWriter;
+import java.math.BigInteger;
+import java.security.*;
+import java.security.cert.Certificate;
+import java.security.cert.CertificateException;
+import java.security.cert.CertificateFactory;
+import java.text.ParseException;
+import java.util.Base64;
+import java.util.Calendar;
+import java.util.Date;
 
 public class JwkToPublicKeyConverter {
     /**

@@ -1,16 +1,15 @@
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import Dashboard from './Dashboard';
 import {
     fetchTilesFailed,
     fetchTilesStart,
-    fetchTilesSuccess,
     fetchTilesStop,
+    fetchTilesSuccess,
 } from '../../actions/catalog-tile-actions';
-import { clearService } from '../../actions/selected-service-actions';
-import { filterText, clear } from '../../actions/filter-actions';
-import { refreshedStaticApi } from "../../actions/refresh-static-apis-actions";
-import { createLoadingSelector, getVisibleTiles } from '../../selectors/selectors';
-import {clearError} from "../../actions/refresh-static-apis-actions";
+import {clearService} from '../../actions/selected-service-actions';
+import {clear, filterText} from '../../actions/filter-actions';
+import {clearError, refreshedStaticApi} from "../../actions/refresh-static-apis-actions";
+import {createLoadingSelector, getVisibleTiles} from '../../selectors/selectors';
 
 const loadingSelector = createLoadingSelector(['FETCH_TILES']);
 

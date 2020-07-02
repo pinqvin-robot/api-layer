@@ -9,12 +9,12 @@
  */
 package org.zowe.apiml.security.common.error;
 
-import org.zowe.apiml.message.core.MessageService;
-import org.zowe.apiml.product.gateway.GatewayNotAvailableException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
+import org.zowe.apiml.message.core.MessageService;
+import org.zowe.apiml.product.gateway.GatewayNotAvailableException;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

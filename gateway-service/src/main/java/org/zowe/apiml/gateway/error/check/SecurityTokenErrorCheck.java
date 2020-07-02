@@ -9,16 +9,16 @@
  */
 package org.zowe.apiml.gateway.error.check;
 
-import org.zowe.apiml.security.common.token.TokenExpireException;
-import org.zowe.apiml.security.common.token.TokenNotValidException;
-import org.zowe.apiml.message.api.ApiMessageView;
-import org.zowe.apiml.message.core.MessageService;
 import com.netflix.zuul.exception.ZuulException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.AuthenticationException;
+import org.zowe.apiml.message.api.ApiMessageView;
+import org.zowe.apiml.message.core.MessageService;
+import org.zowe.apiml.security.common.token.TokenExpireException;
+import org.zowe.apiml.security.common.token.TokenNotValidException;
 
 import javax.servlet.http.HttpServletRequest;
 

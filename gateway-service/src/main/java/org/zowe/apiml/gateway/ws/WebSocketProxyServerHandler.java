@@ -9,9 +9,6 @@
  */
 package org.zowe.apiml.gateway.ws;
 
-import org.zowe.apiml.product.routing.RoutedService;
-import org.zowe.apiml.product.routing.RoutedServices;
-import org.zowe.apiml.product.routing.RoutedServicesUser;
 import lombok.extern.slf4j.Slf4j;
 import org.eclipse.jetty.util.ssl.SslContextFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +19,9 @@ import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.WebSocketMessage;
 import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.AbstractWebSocketHandler;
+import org.zowe.apiml.product.routing.RoutedService;
+import org.zowe.apiml.product.routing.RoutedServices;
+import org.zowe.apiml.product.routing.RoutedServicesUser;
 
 import javax.inject.Singleton;
 import java.io.IOException;

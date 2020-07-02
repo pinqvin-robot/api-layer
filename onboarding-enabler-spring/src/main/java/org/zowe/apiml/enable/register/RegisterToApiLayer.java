@@ -9,20 +9,18 @@
  */
 package org.zowe.apiml.enable.register;
 
-import org.zowe.apiml.eurekaservice.client.ApiMediationClient;
-import org.zowe.apiml.eurekaservice.client.config.ApiMediationServiceConfig;
-
-import org.zowe.apiml.exception.ServiceDefinitionException;
-import org.zowe.apiml.message.log.ApimlLogger;
-import org.zowe.apiml.product.logging.annotations.InjectApimlLogger;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.event.ContextClosedEvent;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
-
-import lombok.extern.slf4j.Slf4j;
+import org.zowe.apiml.eurekaservice.client.ApiMediationClient;
+import org.zowe.apiml.eurekaservice.client.config.ApiMediationServiceConfig;
+import org.zowe.apiml.exception.ServiceDefinitionException;
+import org.zowe.apiml.message.log.ApimlLogger;
+import org.zowe.apiml.product.logging.annotations.InjectApimlLogger;
 
 
 @Slf4j

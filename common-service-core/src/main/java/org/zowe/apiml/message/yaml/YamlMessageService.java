@@ -9,10 +9,13 @@
  */
 package org.zowe.apiml.message.yaml;
 
-import org.zowe.apiml.message.core.*;
-import org.zowe.apiml.message.template.MessageTemplates;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.error.YAMLException;
+import org.zowe.apiml.message.core.AbstractMessageService;
+import org.zowe.apiml.message.core.DuplicateMessageException;
+import org.zowe.apiml.message.core.MessageLoadException;
+import org.zowe.apiml.message.core.MessageService;
+import org.zowe.apiml.message.template.MessageTemplates;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -9,14 +9,14 @@
  */
 package org.zowe.apiml.gateway.security.query;
 
-import org.zowe.apiml.security.common.token.TokenAuthentication;
-import org.zowe.apiml.gateway.security.service.AuthenticationService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.stereotype.Component;
+import org.zowe.apiml.gateway.security.service.AuthenticationService;
+import org.zowe.apiml.security.common.token.TokenAuthentication;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

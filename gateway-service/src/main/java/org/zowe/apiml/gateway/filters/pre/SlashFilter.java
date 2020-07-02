@@ -9,15 +9,13 @@
  */
 package org.zowe.apiml.gateway.filters.pre;
 
-import org.zowe.apiml.util.UrlUtils;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
+import org.zowe.apiml.util.UrlUtils;
 
 import javax.servlet.http.HttpServletResponse;
 
-import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.PRE_DECORATION_FILTER_ORDER;
-import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.PROXY_KEY;
-import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.SERVICE_ID_KEY;
+import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.*;
 
 /**
  * Must be run after PreDecorationFilter. This will set Proxy, ServiceId and other variables in RequestContext

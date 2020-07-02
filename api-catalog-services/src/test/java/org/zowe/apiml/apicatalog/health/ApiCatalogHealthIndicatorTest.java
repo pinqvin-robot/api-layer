@@ -9,16 +9,16 @@
  */
 package org.zowe.apiml.apicatalog.health;
 
-import org.zowe.apiml.product.constants.CoreService;
 import org.junit.Test;
 import org.springframework.boot.actuate.health.Health;
 import org.springframework.boot.actuate.health.Status;
 import org.springframework.cloud.client.DefaultServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.zowe.apiml.product.constants.CoreService;
 
 import java.util.Collections;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 

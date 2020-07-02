@@ -8,13 +8,13 @@ package org.zowe.apiml.message.log;/*
  * Copyright Contributors to the Zowe Project.
  */
 
-import org.zowe.apiml.message.core.MessageType;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import org.slf4j.Logger;
 import org.slf4j.Marker;
 import org.springframework.test.util.ReflectionTestUtils;
+import org.zowe.apiml.message.core.MessageType;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;

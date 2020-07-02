@@ -1,9 +1,9 @@
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
-
 import com.ibm.eserver.zos.racf.IRRPassTicket;
 import com.ibm.eserver.zos.racf.IRRPassTicketGenerationException;
 import com.ibm.os390.security.PlatformThread;
+
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 
 public class PtGen {
     public static void main(String args[]) {

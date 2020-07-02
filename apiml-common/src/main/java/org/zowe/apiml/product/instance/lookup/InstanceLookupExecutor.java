@@ -9,12 +9,12 @@
  */
 package org.zowe.apiml.product.instance.lookup;
 
-import org.zowe.apiml.product.instance.InstanceNotFoundException;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.EurekaClient;
 import com.netflix.discovery.shared.Application;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.zowe.apiml.product.instance.InstanceNotFoundException;
 
 import java.util.List;
 import java.util.concurrent.Executors;

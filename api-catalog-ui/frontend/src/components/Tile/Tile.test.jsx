@@ -1,8 +1,7 @@
 /* eslint-disable no-undef */
 import * as React from 'react';
-import { shallow } from 'enzyme';
+import {shallow} from 'enzyme';
 import Tile from './Tile';
-import DetailPage from '../DetailPage/DetailPage';
 
 const match = {
     params: {

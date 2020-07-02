@@ -16,8 +16,8 @@ import org.springframework.web.socket.WebSocketSession;
 import java.net.InetSocketAddress;
 import java.net.URI;
 
-import static org.hamcrest.Matchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 

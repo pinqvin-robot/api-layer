@@ -1,8 +1,8 @@
 /* eslint-disable react/destructuring-assignment */
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Text from 'mineral-ui/Text';
 import '../../Dashboard/Dashboard.css';
-import { Button } from 'mineral-ui';
+import {Button} from 'mineral-ui';
 import IconChevronLeft from 'mineral-ui-icons/IconChevronLeft';
 import './BigShield.css';
 

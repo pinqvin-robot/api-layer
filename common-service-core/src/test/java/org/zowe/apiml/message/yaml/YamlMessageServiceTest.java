@@ -9,10 +9,10 @@
  */
 package org.zowe.apiml.message.yaml;
 
+import org.junit.Test;
 import org.zowe.apiml.message.core.Message;
 import org.zowe.apiml.message.core.MessageLoadException;
 import org.zowe.apiml.message.core.MessageService;
-import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 

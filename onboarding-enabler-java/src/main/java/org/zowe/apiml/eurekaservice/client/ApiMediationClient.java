@@ -9,9 +9,9 @@
  */
 package org.zowe.apiml.eurekaservice.client;
 
+import com.netflix.discovery.EurekaClient;
 import org.zowe.apiml.eurekaservice.client.config.ApiMediationServiceConfig;
 import org.zowe.apiml.exception.ServiceDefinitionException;
-import com.netflix.discovery.EurekaClient;
 
 
 /**

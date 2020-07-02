@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Dialog, DialogBody, DialogHeader, DialogTitle, DialogFooter, DialogActions, Button, Text } from 'mineral-ui';
+import React, {Component} from 'react';
+import {Button, Dialog, DialogActions, DialogBody, DialogFooter, DialogHeader, DialogTitle, Text} from 'mineral-ui';
 
 export default class ErrorDialog extends Component {
 

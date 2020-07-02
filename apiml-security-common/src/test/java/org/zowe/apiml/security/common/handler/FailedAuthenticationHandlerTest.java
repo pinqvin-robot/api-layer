@@ -9,11 +9,11 @@
  */
 package org.zowe.apiml.security.common.handler;
 
-import org.zowe.apiml.security.common.error.AuthExceptionHandler;
 import org.junit.Test;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.security.authentication.BadCredentialsException;
+import org.zowe.apiml.security.common.error.AuthExceptionHandler;
 
 import javax.servlet.ServletException;
 

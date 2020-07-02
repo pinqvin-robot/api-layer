@@ -1,16 +1,16 @@
 /* eslint-disable no-undef */
 
 import React from 'react';
-import { render, fireEvent, cleanup, wait, within, waitForElement } from 'react-testing-library';
-import { applyMiddleware, compose, createStore } from 'redux';
-import { Provider } from 'react-redux';
+import {cleanup, fireEvent, render, wait, waitForElement, within} from 'react-testing-library';
+import {applyMiddleware, compose, createStore} from 'redux';
+import {Provider} from 'react-redux';
 
-import { createEpicMiddleware } from 'redux-observable';
-import { ajax } from 'rxjs/ajax';
-import { HashRouter } from 'react-router-dom';
-import { ThemeProvider } from 'mineral-ui';
-import { rootReducer } from '../reducers';
-import { rootEpic } from '../epics';
+import {createEpicMiddleware} from 'redux-observable';
+import {ajax} from 'rxjs/ajax';
+import {HashRouter} from 'react-router-dom';
+import {ThemeProvider} from 'mineral-ui';
+import {rootReducer} from '../reducers';
+import {rootEpic} from '../epics';
 import AppContainer from '../components/App/AppContainer';
 import DashboardContainer from '../components/Dashboard/DashboardContainer';
 

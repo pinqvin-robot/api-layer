@@ -11,12 +11,12 @@ package org.zowe.apiml.gateway.health;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.zowe.apiml.security.common.config.AuthConfigurationProperties;
-import org.zowe.apiml.product.constants.CoreService;
 import org.springframework.boot.actuate.health.Health;
 import org.springframework.boot.actuate.health.Status;
 import org.springframework.cloud.client.DefaultServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.zowe.apiml.product.constants.CoreService;
+import org.zowe.apiml.security.common.config.AuthConfigurationProperties;
 
 import java.util.Collections;
 

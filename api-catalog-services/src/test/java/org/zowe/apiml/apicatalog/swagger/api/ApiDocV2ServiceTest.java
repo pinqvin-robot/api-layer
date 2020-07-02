@@ -10,13 +10,6 @@
 
 package org.zowe.apiml.apicatalog.swagger.api;
 
-import org.zowe.apiml.apicatalog.services.cached.model.ApiDocInfo;
-import org.zowe.apiml.config.ApiInfo;
-import org.zowe.apiml.product.constants.CoreService;
-import org.zowe.apiml.product.gateway.GatewayClient;
-import org.zowe.apiml.product.gateway.GatewayConfigProperties;
-import org.zowe.apiml.product.routing.RoutedService;
-import org.zowe.apiml.product.routing.RoutedServices;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.models.*;
@@ -27,6 +20,13 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.zowe.apiml.apicatalog.services.cached.model.ApiDocInfo;
+import org.zowe.apiml.config.ApiInfo;
+import org.zowe.apiml.product.constants.CoreService;
+import org.zowe.apiml.product.gateway.GatewayClient;
+import org.zowe.apiml.product.gateway.GatewayConfigProperties;
+import org.zowe.apiml.product.routing.RoutedService;
+import org.zowe.apiml.product.routing.RoutedServices;
 
 import javax.validation.UnexpectedTypeException;
 import java.io.IOException;

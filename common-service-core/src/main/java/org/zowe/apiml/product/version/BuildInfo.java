@@ -9,9 +9,9 @@
  */
 package org.zowe.apiml.product.version;
 
+import lombok.extern.slf4j.Slf4j;
 import org.zowe.apiml.message.log.ApimlLogger;
 import org.zowe.apiml.message.yaml.YamlMessageServiceInstance;
-import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
 import refreshStaticApisReducer from './refresh-static-apis-reducer';
 import {
-    REFRESH_STATIC_APIS_SUCCESS,
+    CLEAR_ERROR,
     REFRESH_STATIC_APIS_ERROR,
-    CLEAR_ERROR
+    REFRESH_STATIC_APIS_SUCCESS
 } from "../constants/refresh-static-apis-constants";
 
 describe('>>> Refresh static apis reducer tests', () => {

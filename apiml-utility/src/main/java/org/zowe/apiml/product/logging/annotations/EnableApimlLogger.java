@@ -9,9 +9,9 @@
  */
 package org.zowe.apiml.product.logging.annotations;
 
-import org.zowe.apiml.product.logging.LoggingConfiguration;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.zowe.apiml.product.logging.LoggingConfiguration;
 
 import java.lang.annotation.*;
 

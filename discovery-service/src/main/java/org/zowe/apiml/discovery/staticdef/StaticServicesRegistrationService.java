@@ -9,8 +9,6 @@
  */
 package org.zowe.apiml.discovery.staticdef;
 
-import org.zowe.apiml.discovery.EurekaRegistryAvailableListener;
-import org.zowe.apiml.discovery.metadata.MetadataDefaultsService;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.appinfo.LeaseInfo;
 import com.netflix.eureka.EurekaServerContext;
@@ -20,6 +18,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import org.zowe.apiml.discovery.EurekaRegistryAvailableListener;
+import org.zowe.apiml.discovery.metadata.MetadataDefaultsService;
 
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;

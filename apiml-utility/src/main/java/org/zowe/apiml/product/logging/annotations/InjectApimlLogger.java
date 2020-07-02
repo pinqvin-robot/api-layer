@@ -10,12 +10,12 @@
 package org.zowe.apiml.product.logging.annotations;
 
 
-import static java.lang.annotation.ElementType.FIELD;
-import static java.lang.annotation.RetentionPolicy.RUNTIME;
-
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
+
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
  * When you enable APIML logging with {@link EnableApimlLogger}, you can use EnableApimlLogger as an injector.

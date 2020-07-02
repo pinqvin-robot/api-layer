@@ -9,17 +9,17 @@
  */
 package org.zowe.apiml.apicatalog.controllers.handlers;
 
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.zowe.apiml.apicatalog.controllers.api.CatalogApiDocController;
 import org.zowe.apiml.apicatalog.services.status.model.ApiDocNotFoundException;
 import org.zowe.apiml.apicatalog.services.status.model.ServiceNotFoundException;
 import org.zowe.apiml.message.api.ApiMessageView;
 import org.zowe.apiml.message.core.Message;
 import org.zowe.apiml.message.core.MessageService;
-import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 
 /**
  * This class creates responses for exceptional behavior of the CatalogApiDocController

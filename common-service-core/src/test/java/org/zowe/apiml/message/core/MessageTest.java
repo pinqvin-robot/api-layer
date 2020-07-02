@@ -9,13 +9,13 @@
  */
 package org.zowe.apiml.message.core;
 
-import org.zowe.apiml.message.api.ApiMessage;
-import org.zowe.apiml.message.api.ApiMessageView;
-import org.zowe.apiml.message.template.MessageTemplate;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+import org.zowe.apiml.message.api.ApiMessage;
+import org.zowe.apiml.message.api.ApiMessageView;
+import org.zowe.apiml.message.template.MessageTemplate;
 
 import java.util.Collections;
 import java.util.IllegalFormatConversionException;

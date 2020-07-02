@@ -2,9 +2,9 @@
 
 import React from 'react';
 import * as enzyme from 'enzyme';
-import { AjaxError } from 'rxjs/ajax/index';
+import {AjaxError} from 'rxjs/ajax/index';
 import Error from './Error';
-import { ApiError, MessageType } from '../../constants/error-constants';
+import {ApiError, MessageType} from '../../constants/error-constants';
 
 describe('>>> Error component tests', () => {
     it('Should display the dialog and the error message for Api error', () => {

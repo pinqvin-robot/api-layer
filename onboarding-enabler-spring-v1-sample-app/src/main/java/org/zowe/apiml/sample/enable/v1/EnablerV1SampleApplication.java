@@ -9,9 +9,9 @@
  */
 package org.zowe.apiml.sample.enable.v1;
 
-import org.zowe.apiml.enable.EnableApiDiscovery;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.zowe.apiml.enable.EnableApiDiscovery;
 
 @SpringBootApplication
 @EnableApiDiscovery

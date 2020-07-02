@@ -10,17 +10,17 @@
 
 package org.zowe.apiml.gateway.security.login.zosmf;
 
-import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import org.junit.jupiter.api.Test;
+import org.springframework.web.client.RestTemplate;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.web.client.RestTemplate;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 public class ZosmfJwkToPublicKeyTest {
 

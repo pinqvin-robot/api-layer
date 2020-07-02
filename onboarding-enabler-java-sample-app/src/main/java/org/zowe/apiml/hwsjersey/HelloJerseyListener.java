@@ -9,12 +9,12 @@
  */
 package org.zowe.apiml.hwsjersey;
 
+import lombok.extern.slf4j.Slf4j;
 import org.zowe.apiml.eurekaservice.client.ApiMediationClient;
 import org.zowe.apiml.eurekaservice.client.config.ApiMediationServiceConfig;
 import org.zowe.apiml.eurekaservice.client.impl.ApiMediationClientImpl;
 import org.zowe.apiml.eurekaservice.client.util.ApiMediationServiceConfigReader;
 import org.zowe.apiml.exception.ServiceDefinitionException;
-import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;

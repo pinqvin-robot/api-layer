@@ -1,4 +1,4 @@
-import { SEND_ERROR, CLEAR_ALL_ERRORS } from '../constants/error-constants';
+import {CLEAR_ALL_ERRORS, SEND_ERROR} from '../constants/error-constants';
 
 const errorReducer = (state = { errors: [] }, action) => {
     switch (action.type) {

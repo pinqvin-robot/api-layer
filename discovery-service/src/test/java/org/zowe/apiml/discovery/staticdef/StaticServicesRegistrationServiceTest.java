@@ -9,7 +9,6 @@
  */
 package org.zowe.apiml.discovery.staticdef;
 
-import org.zowe.apiml.discovery.metadata.MetadataDefaultsService;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.eureka.EurekaServerContext;
 import com.netflix.eureka.EurekaServerContextHolder;
@@ -18,6 +17,7 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
+import org.zowe.apiml.discovery.metadata.MetadataDefaultsService;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

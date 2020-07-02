@@ -9,8 +9,6 @@
  */
 package org.zowe.apiml.gateway.security.service;
 
-import org.zowe.apiml.config.service.security.MockedSecurityInitializer;
-import org.zowe.apiml.security.HttpsConfigError;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -20,6 +18,8 @@ import org.springframework.context.annotation.Import;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.zowe.apiml.config.service.security.MockedSecurityInitializer;
+import org.zowe.apiml.security.HttpsConfigError;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;

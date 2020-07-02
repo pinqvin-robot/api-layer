@@ -9,14 +9,14 @@
  */
 package org.zowe.apiml.message.log;
 
-import org.zowe.apiml.message.core.Message;
-import org.zowe.apiml.message.core.MessageService;
-import org.zowe.apiml.message.core.MessageType;
-import org.zowe.apiml.util.ObjectUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Marker;
 import org.slf4j.MarkerFactory;
+import org.zowe.apiml.message.core.Message;
+import org.zowe.apiml.message.core.MessageService;
+import org.zowe.apiml.message.core.MessageType;
+import org.zowe.apiml.util.ObjectUtil;
 
 /**
  * Class which allows to control log messages through {@link MessageService}.

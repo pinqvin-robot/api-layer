@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { debounce } from 'lodash';
-import { TextInput } from 'mineral-ui';
+import React, {Component} from 'react';
+import {debounce} from 'lodash';
+import {TextInput} from 'mineral-ui';
 import IconSearch from 'mineral-ui-icons/IconSearch';
-import { IconClear } from 'mineral-ui-icons';
+import {IconClear} from 'mineral-ui-icons';
 import './search.css';
 
 export default class SearchCriteria extends Component {

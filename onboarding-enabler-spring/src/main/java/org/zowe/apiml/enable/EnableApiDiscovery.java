@@ -9,8 +9,8 @@
  */
 package org.zowe.apiml.enable;
 
-import org.zowe.apiml.enable.config.EnableApiDiscoveryConfig;
 import org.springframework.context.annotation.Import;
+import org.zowe.apiml.enable.config.EnableApiDiscoveryConfig;
 
 import java.lang.annotation.*;
 

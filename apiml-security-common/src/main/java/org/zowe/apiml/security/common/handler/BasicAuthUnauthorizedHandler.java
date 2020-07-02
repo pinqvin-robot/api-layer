@@ -9,11 +9,11 @@
  */
 package org.zowe.apiml.security.common.handler;
 
-import org.zowe.apiml.security.common.error.AuthExceptionHandler;
-import org.zowe.apiml.constants.ApimlConstants;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Component;
+import org.zowe.apiml.constants.ApimlConstants;
+import org.zowe.apiml.security.common.error.AuthExceptionHandler;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

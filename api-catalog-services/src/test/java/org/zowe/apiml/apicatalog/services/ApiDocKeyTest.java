@@ -9,9 +9,9 @@
  */
 package org.zowe.apiml.apicatalog.services;
 
-import org.zowe.apiml.apicatalog.services.cached.model.ApiDocCacheKey;
 import org.junit.Assert;
 import org.junit.Test;
+import org.zowe.apiml.apicatalog.services.cached.model.ApiDocCacheKey;
 
 public class ApiDocKeyTest {
 

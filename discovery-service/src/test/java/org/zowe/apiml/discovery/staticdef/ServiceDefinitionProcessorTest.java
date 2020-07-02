@@ -10,7 +10,6 @@
 package org.zowe.apiml.discovery.staticdef;
 
 import com.netflix.appinfo.InstanceInfo;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.zowe.apiml.message.core.Message;

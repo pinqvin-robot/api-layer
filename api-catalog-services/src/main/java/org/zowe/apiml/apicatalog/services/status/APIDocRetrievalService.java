@@ -9,16 +9,6 @@
  */
 package org.zowe.apiml.apicatalog.services.status;
 
-import org.zowe.apiml.apicatalog.instance.InstanceRetrievalService;
-import org.zowe.apiml.eurekaservice.client.util.EurekaMetadataParser;
-import org.zowe.apiml.apicatalog.services.cached.model.ApiDocInfo;
-import org.zowe.apiml.apicatalog.services.status.model.ApiDocNotFoundException;
-import org.zowe.apiml.apicatalog.swagger.SubstituteSwaggerGenerator;
-import org.zowe.apiml.config.ApiInfo;
-import org.zowe.apiml.product.gateway.GatewayClient;
-import org.zowe.apiml.product.gateway.GatewayConfigProperties;
-import org.zowe.apiml.product.routing.RoutedService;
-import org.zowe.apiml.product.routing.RoutedServices;
 import com.netflix.appinfo.InstanceInfo;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
@@ -27,6 +17,16 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
+import org.zowe.apiml.apicatalog.instance.InstanceRetrievalService;
+import org.zowe.apiml.apicatalog.services.cached.model.ApiDocInfo;
+import org.zowe.apiml.apicatalog.services.status.model.ApiDocNotFoundException;
+import org.zowe.apiml.apicatalog.swagger.SubstituteSwaggerGenerator;
+import org.zowe.apiml.config.ApiInfo;
+import org.zowe.apiml.eurekaservice.client.util.EurekaMetadataParser;
+import org.zowe.apiml.product.gateway.GatewayClient;
+import org.zowe.apiml.product.gateway.GatewayConfigProperties;
+import org.zowe.apiml.product.routing.RoutedService;
+import org.zowe.apiml.product.routing.RoutedServices;
 
 import java.util.Collections;
 import java.util.List;

@@ -10,14 +10,14 @@
 
 package org.zowe.apiml.security.common.config;
 
+import lombok.Getter;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 import org.zowe.apiml.security.common.error.ResourceAccessExceptionHandler;
 import org.zowe.apiml.security.common.handler.BasicAuthUnauthorizedHandler;
 import org.zowe.apiml.security.common.handler.FailedAuthenticationHandler;
 import org.zowe.apiml.security.common.handler.UnauthorizedHandler;
 import org.zowe.apiml.security.common.login.SuccessfulLoginHandler;
-import lombok.Getter;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
 
 /**
  * Convenience class that simplifies spring security configuration

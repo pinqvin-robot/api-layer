@@ -9,13 +9,13 @@
  */
 package org.zowe.apiml.security.client.token;
 
-import org.zowe.apiml.security.client.service.GatewaySecurityService;
-import org.zowe.apiml.security.common.token.QueryResponse;
-import org.zowe.apiml.security.common.token.TokenAuthentication;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
+import org.zowe.apiml.security.client.service.GatewaySecurityService;
+import org.zowe.apiml.security.common.token.QueryResponse;
+import org.zowe.apiml.security.common.token.TokenAuthentication;
 
 /**
  * Authentication provider that authenticates TokenAuthentication against Gateway

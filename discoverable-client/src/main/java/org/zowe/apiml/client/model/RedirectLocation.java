@@ -9,11 +9,11 @@
  */
 package org.zowe.apiml.client.model;
 
-import org.zowe.apiml.client.model.state.New;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.zowe.apiml.client.model.state.New;
 
 import javax.validation.constraints.NotNull;
 

@@ -9,10 +9,10 @@
  */
 package org.zowe.apiml.client.impl;
 
+import org.junit.Test;
 import org.zowe.apiml.client.exception.PetNotFoundException;
 import org.zowe.apiml.client.model.Pet;
 import org.zowe.apiml.client.service.impl.PetServiceImpl;
-import org.junit.Test;
 
 import java.util.List;
 

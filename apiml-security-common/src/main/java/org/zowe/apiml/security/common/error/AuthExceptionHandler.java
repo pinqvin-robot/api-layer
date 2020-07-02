@@ -9,11 +9,6 @@
  */
 package org.zowe.apiml.security.common.error;
 
-import org.zowe.apiml.security.common.token.TokenExpireException;
-import org.zowe.apiml.security.common.token.TokenNotProvidedException;
-import org.zowe.apiml.security.common.token.TokenNotValidException;
-import org.zowe.apiml.message.api.ApiMessageView;
-import org.zowe.apiml.message.core.MessageService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -22,6 +17,11 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.InsufficientAuthenticationException;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Component;
+import org.zowe.apiml.message.api.ApiMessageView;
+import org.zowe.apiml.message.core.MessageService;
+import org.zowe.apiml.security.common.token.TokenExpireException;
+import org.zowe.apiml.security.common.token.TokenNotProvidedException;
+import org.zowe.apiml.security.common.token.TokenNotValidException;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

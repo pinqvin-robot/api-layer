@@ -9,13 +9,6 @@
  */
 package org.zowe.apiml.apicatalog.services.status;
 
-import org.zowe.apiml.apicatalog.model.APIContainer;
-import org.zowe.apiml.apicatalog.model.APIService;
-import org.zowe.apiml.apicatalog.services.cached.CachedApiDocService;
-import org.zowe.apiml.apicatalog.services.cached.CachedProductFamilyService;
-import org.zowe.apiml.apicatalog.services.cached.CachedServicesService;
-import org.zowe.apiml.apicatalog.services.status.event.model.ContainerStatusChangeEvent;
-import org.zowe.apiml.apicatalog.services.status.event.model.STATUS_EVENT_TYPE;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.shared.Applications;
 import org.junit.Test;
@@ -25,6 +18,13 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.zowe.apiml.apicatalog.model.APIContainer;
+import org.zowe.apiml.apicatalog.model.APIService;
+import org.zowe.apiml.apicatalog.services.cached.CachedApiDocService;
+import org.zowe.apiml.apicatalog.services.cached.CachedProductFamilyService;
+import org.zowe.apiml.apicatalog.services.cached.CachedServicesService;
+import org.zowe.apiml.apicatalog.services.status.event.model.ContainerStatusChangeEvent;
+import org.zowe.apiml.apicatalog.services.status.event.model.STATUS_EVENT_TYPE;
 
 import java.util.*;
 

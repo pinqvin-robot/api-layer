@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import {SEND_ERROR, CLEAR_ALL_ERRORS, ApiError, MessageType, GATEWAY_UP} from '../constants/error-constants';
+import {ApiError, CLEAR_ALL_ERRORS, MessageType, SEND_ERROR} from '../constants/error-constants';
 import errorReducer from './error-reducer';
 
 describe('>>> Error reducer tests', () => {

@@ -9,20 +9,20 @@
  */
 package org.zowe.apiml.gateway.security.service.ticket;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.zowe.apiml.gateway.security.ticket.SuccessfulTicketHandler;
-import org.zowe.apiml.security.common.ticket.TicketRequest;
-import org.zowe.apiml.security.common.token.TokenAuthentication;
-import org.zowe.apiml.message.core.MessageService;
-import org.zowe.apiml.message.yaml.YamlMessageService;
-import org.zowe.apiml.passticket.PassTicketService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;
+import org.zowe.apiml.gateway.security.ticket.SuccessfulTicketHandler;
+import org.zowe.apiml.message.core.MessageService;
+import org.zowe.apiml.message.yaml.YamlMessageService;
+import org.zowe.apiml.passticket.PassTicketService;
+import org.zowe.apiml.security.common.ticket.TicketRequest;
+import org.zowe.apiml.security.common.token.TokenAuthentication;
 
 import java.io.UnsupportedEncodingException;
 

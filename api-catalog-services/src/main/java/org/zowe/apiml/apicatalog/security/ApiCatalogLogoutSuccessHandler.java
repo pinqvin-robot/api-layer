@@ -9,12 +9,12 @@
  */
 package org.zowe.apiml.apicatalog.security;
 
-import org.zowe.apiml.security.common.config.AuthConfigurationProperties;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.logout.SimpleUrlLogoutSuccessHandler;
+import org.zowe.apiml.security.common.config.AuthConfigurationProperties;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;

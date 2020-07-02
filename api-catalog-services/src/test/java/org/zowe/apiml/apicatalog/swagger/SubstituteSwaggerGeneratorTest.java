@@ -9,18 +9,18 @@
  */
 package org.zowe.apiml.apicatalog.swagger;
 
-import org.zowe.apiml.eurekaservice.client.util.EurekaMetadataParser;
-import org.zowe.apiml.config.ApiInfo;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.appinfo.InstanceInfo.PortType;
 import org.junit.Test;
+import org.zowe.apiml.config.ApiInfo;
+import org.zowe.apiml.eurekaservice.client.util.EurekaMetadataParser;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static org.zowe.apiml.constants.EurekaMetadataDefinition.*;
 import static org.junit.Assert.assertTrue;
+import static org.zowe.apiml.constants.EurekaMetadataDefinition.*;
 
 public class SubstituteSwaggerGeneratorTest {
 

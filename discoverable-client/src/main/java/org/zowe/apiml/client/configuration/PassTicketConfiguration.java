@@ -9,9 +9,9 @@
  */
 package org.zowe.apiml.client.configuration;
 
-import org.zowe.apiml.passticket.PassTicketService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.zowe.apiml.passticket.PassTicketService;
 
 @Configuration
 public class PassTicketConfiguration {

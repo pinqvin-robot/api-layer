@@ -12,8 +12,6 @@ package org.zowe.apiml.gateway.filters.pre;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.zowe.apiml.message.core.Message;
-import org.zowe.apiml.message.core.MessageService;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import lombok.RequiredArgsConstructor;
@@ -22,11 +20,16 @@ import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
 import org.springframework.http.HttpStatus;
+import org.zowe.apiml.message.core.Message;
+import org.zowe.apiml.message.core.MessageService;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
-import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.*;
+import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.PRE_DECORATION_FILTER_ORDER;
+import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.SERVICE_ID_KEY;
 
 /**
  *  This filter should run on all requests for services, which do not have enabled encoded characters in URL

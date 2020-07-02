@@ -9,12 +9,6 @@
  */
 package org.zowe.apiml.apicatalog.controllers.api;
 
-import org.zowe.apiml.apicatalog.exceptions.ContainerStatusRetrievalException;
-import org.zowe.apiml.apicatalog.model.APIContainer;
-import org.zowe.apiml.apicatalog.model.APIService;
-import org.zowe.apiml.apicatalog.services.cached.CachedApiDocService;
-import org.zowe.apiml.apicatalog.services.cached.CachedProductFamilyService;
-import org.zowe.apiml.apicatalog.services.cached.CachedServicesService;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.shared.Application;
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
@@ -25,6 +19,12 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.http.ResponseEntity;
+import org.zowe.apiml.apicatalog.exceptions.ContainerStatusRetrievalException;
+import org.zowe.apiml.apicatalog.model.APIContainer;
+import org.zowe.apiml.apicatalog.model.APIService;
+import org.zowe.apiml.apicatalog.services.cached.CachedApiDocService;
+import org.zowe.apiml.apicatalog.services.cached.CachedProductFamilyService;
+import org.zowe.apiml.apicatalog.services.cached.CachedServicesService;
 
 import java.util.Arrays;
 import java.util.HashSet;

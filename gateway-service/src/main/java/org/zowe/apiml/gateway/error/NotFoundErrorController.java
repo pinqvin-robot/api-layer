@@ -10,9 +10,6 @@
 package org.zowe.apiml.gateway.error;
 
 
-import org.zowe.apiml.message.api.ApiMessageView;
-import org.zowe.apiml.message.core.Message;
-import org.zowe.apiml.message.core.MessageService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.core.Ordered;
@@ -21,6 +18,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.zowe.apiml.message.api.ApiMessageView;
+import org.zowe.apiml.message.core.Message;
+import org.zowe.apiml.message.core.MessageService;
 
 import javax.servlet.http.HttpServletRequest;
 

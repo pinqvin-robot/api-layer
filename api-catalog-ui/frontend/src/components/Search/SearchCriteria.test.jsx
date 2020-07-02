@@ -1,5 +1,4 @@
-import { ThemeProvider } from 'mineral-ui';
-import { debounce } from 'lodash';
+import {ThemeProvider} from 'mineral-ui';
 /* eslint-disable no-undef */
 import * as React from 'react';
 // tslint:disable-next-line:no-implicit-dependencies

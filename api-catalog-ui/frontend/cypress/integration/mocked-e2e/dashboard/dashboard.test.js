@@ -1,5 +1,3 @@
-import { PAUSE } from 'redux-persist';
-
 /* eslint-disable no-undef */
 /* eslint-disable spaced-comment */
 /// <reference types="Cypress" />

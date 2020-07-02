@@ -9,10 +9,11 @@
  */
 package org.zowe.apiml.message.storage;
 
+import org.junit.Test;
 import org.zowe.apiml.message.core.MessageType;
 import org.zowe.apiml.message.template.MessageTemplate;
 import org.zowe.apiml.message.template.MessageTemplates;
-import org.junit.Test;
+
 import java.util.Collections;
 import java.util.Optional;
 

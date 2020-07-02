@@ -9,7 +9,10 @@
  */
 package org.zowe.apiml.util;
 
-import org.junit.*;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Rule;
+import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
 import java.io.File;
@@ -17,7 +20,6 @@ import java.io.IOException;
 import java.nio.file.InvalidPathException;
 
 import static org.junit.Assert.*;
-import static org.junit.Assert.assertNotNull;
 
 
 public class FileUtilsTest {

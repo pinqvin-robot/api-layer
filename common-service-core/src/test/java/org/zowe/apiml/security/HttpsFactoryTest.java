@@ -9,18 +9,7 @@
  */
 package org.zowe.apiml.security;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-
-import java.security.KeyStoreException;
-
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.SSLContext;
-
 import com.netflix.discovery.shared.transport.jersey.EurekaJerseyClientImpl;
-
 import org.apache.http.client.HttpClient;
 import org.apache.http.conn.socket.ConnectionSocketFactory;
 import org.apache.http.conn.ssl.DefaultHostnameVerifier;
@@ -28,6 +17,12 @@ import org.apache.http.conn.ssl.NoopHostnameVerifier;
 import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
 import org.junit.Before;
 import org.junit.Test;
+
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.SSLContext;
+import java.security.KeyStoreException;
+
+import static org.junit.Assert.*;
 
 public class HttpsFactoryTest {
     private static final String EUREKA_URL_NO_SCHEME = "://localhost:10011/eureka/";

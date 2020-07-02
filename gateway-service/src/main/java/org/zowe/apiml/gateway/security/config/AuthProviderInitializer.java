@@ -9,15 +9,15 @@
  */
 package org.zowe.apiml.gateway.security.config;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.stereotype.Component;
 import org.zowe.apiml.gateway.security.login.LoginProvider;
 import org.zowe.apiml.gateway.security.login.dummy.DummyAuthenticationProvider;
 import org.zowe.apiml.gateway.security.login.zosmf.ZosmfAuthenticationProvider;
 import org.zowe.apiml.gateway.security.query.TokenAuthenticationProvider;
 import org.zowe.apiml.message.log.ApimlLogger;
 import org.zowe.apiml.product.logging.annotations.InjectApimlLogger;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
-import org.springframework.stereotype.Component;
 
 /**
  * Initialize authentication and authorization provider set by apiml.security.auth.provider parameter

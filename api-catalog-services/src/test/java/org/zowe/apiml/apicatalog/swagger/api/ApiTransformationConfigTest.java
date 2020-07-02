@@ -16,7 +16,8 @@ import org.junit.rules.ExpectedException;
 import javax.validation.UnexpectedTypeException;
 import java.util.function.Function;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 
 public class ApiTransformationConfigTest {
 

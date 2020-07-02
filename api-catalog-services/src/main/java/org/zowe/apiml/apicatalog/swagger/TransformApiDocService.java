@@ -9,11 +9,11 @@
  */
 package org.zowe.apiml.apicatalog.swagger;
 
-import org.zowe.apiml.apicatalog.services.cached.model.ApiDocInfo;
-import org.zowe.apiml.apicatalog.swagger.api.AbstractApiDocService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.zowe.apiml.apicatalog.services.cached.model.ApiDocInfo;
+import org.zowe.apiml.apicatalog.swagger.api.AbstractApiDocService;
 
 import javax.validation.UnexpectedTypeException;
 import java.util.function.Function;

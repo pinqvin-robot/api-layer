@@ -9,11 +9,6 @@
  */
 package org.zowe.apiml.apicatalog.services.status;
 
-import org.zowe.apiml.product.gateway.GatewayClient;
-import org.zowe.apiml.product.gateway.GatewayConfigProperties;
-import org.zowe.apiml.apicatalog.services.cached.model.ApiDocInfo;
-import org.zowe.apiml.apicatalog.instance.InstanceRetrievalService;
-import org.zowe.apiml.apicatalog.services.status.model.ApiDocNotFoundException;
 import com.netflix.appinfo.InstanceInfo;
 import org.junit.Before;
 import org.junit.Rule;
@@ -24,14 +19,19 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
+import org.zowe.apiml.apicatalog.instance.InstanceRetrievalService;
+import org.zowe.apiml.apicatalog.services.cached.model.ApiDocInfo;
+import org.zowe.apiml.apicatalog.services.status.model.ApiDocNotFoundException;
+import org.zowe.apiml.product.gateway.GatewayClient;
+import org.zowe.apiml.product.gateway.GatewayConfigProperties;
 
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.zowe.apiml.constants.EurekaMetadataDefinition.*;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.when;
+import static org.zowe.apiml.constants.EurekaMetadataDefinition.*;
 
 @RunWith(MockitoJUnitRunner.Silent.class)
 public class LocalApiDocServiceTest {

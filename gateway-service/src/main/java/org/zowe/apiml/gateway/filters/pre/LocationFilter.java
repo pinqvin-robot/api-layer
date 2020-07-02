@@ -9,12 +9,12 @@
  */
 package org.zowe.apiml.gateway.filters.pre;
 
-import org.zowe.apiml.util.UrlUtils;
-import org.zowe.apiml.product.routing.RoutedServices;
-import org.zowe.apiml.product.routing.RoutedServicesUser;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import lombok.extern.slf4j.Slf4j;
+import org.zowe.apiml.product.routing.RoutedServices;
+import org.zowe.apiml.product.routing.RoutedServicesUser;
+import org.zowe.apiml.util.UrlUtils;
 
 import java.util.HashMap;
 import java.util.Map;

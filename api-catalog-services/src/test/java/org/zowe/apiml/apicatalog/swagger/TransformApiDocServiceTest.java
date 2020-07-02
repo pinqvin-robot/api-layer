@@ -9,14 +9,14 @@
  */
 package org.zowe.apiml.apicatalog.swagger;
 
-import org.zowe.apiml.apicatalog.services.cached.model.ApiDocInfo;
-import org.zowe.apiml.apicatalog.swagger.api.AbstractApiDocService;
-import org.zowe.apiml.apicatalog.swagger.api.ApiDocV2Service;
-import org.zowe.apiml.apicatalog.swagger.api.ApiDocV3Service;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+import org.zowe.apiml.apicatalog.services.cached.model.ApiDocInfo;
+import org.zowe.apiml.apicatalog.swagger.api.AbstractApiDocService;
+import org.zowe.apiml.apicatalog.swagger.api.ApiDocV2Service;
+import org.zowe.apiml.apicatalog.swagger.api.ApiDocV3Service;
 
 import javax.validation.UnexpectedTypeException;
 import java.util.function.Function;

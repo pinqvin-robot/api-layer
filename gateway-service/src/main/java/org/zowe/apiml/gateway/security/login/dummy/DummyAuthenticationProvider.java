@@ -9,8 +9,6 @@
  */
 package org.zowe.apiml.gateway.security.login.dummy;
 
-import org.zowe.apiml.security.common.token.TokenAuthentication;
-import org.zowe.apiml.gateway.security.service.AuthenticationService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.authentication.AuthenticationServiceException;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -21,6 +19,8 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
+import org.zowe.apiml.gateway.security.service.AuthenticationService;
+import org.zowe.apiml.security.common.token.TokenAuthentication;
 
 /**
  * Authentication provider for development purposes

@@ -9,8 +9,6 @@
  */
 package org.zowe.apiml.apicatalog.services.cached;
 
-import org.zowe.apiml.apicatalog.model.APIContainer;
-import org.zowe.apiml.apicatalog.model.APIService;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.shared.Application;
 import org.junit.Assert;
@@ -19,13 +17,15 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.zowe.apiml.apicatalog.model.APIContainer;
+import org.zowe.apiml.apicatalog.model.APIService;
 
 import java.util.*;
 
-import static org.zowe.apiml.constants.EurekaMetadataDefinition.*;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.mockito.Mockito.when;
+import static org.zowe.apiml.constants.EurekaMetadataDefinition.*;
 
 @SuppressWarnings({"squid:S2925"}) // replace with proper wait test library
 @RunWith(MockitoJUnitRunner.Silent.class)

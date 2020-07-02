@@ -9,8 +9,6 @@
  */
 package org.zowe.apiml.product.logging;
 
-import org.zowe.apiml.message.log.ApimlLogger;
-import org.zowe.apiml.product.logging.annotations.InjectApimlLogger;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +16,8 @@ import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.zowe.apiml.message.log.ApimlLogger;
+import org.zowe.apiml.product.logging.annotations.InjectApimlLogger;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;

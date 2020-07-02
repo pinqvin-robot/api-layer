@@ -1,5 +1,5 @@
 import Loadable from 'react-loadable';
-import React, { lazy } from 'react';
+import React, {lazy} from 'react';
 
 export const AsyncAppContainer = Loadable({
     loader: () => import('../App/AppContainer'),

@@ -9,11 +9,11 @@
  */
 package org.zowe.apiml.discovery;
 
-import org.zowe.apiml.discovery.staticdef.StaticServicesRegistrationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.eureka.server.event.EurekaRegistryAvailableEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
+import org.zowe.apiml.discovery.staticdef.StaticServicesRegistrationService;
 
 /**
  * Called by Eureka when its service registry is initialized.

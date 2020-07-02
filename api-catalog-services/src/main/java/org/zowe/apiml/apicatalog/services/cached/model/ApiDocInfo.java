@@ -9,11 +9,11 @@
  */
 package org.zowe.apiml.apicatalog.services.cached.model;
 
-import org.zowe.apiml.config.ApiInfo;
-import org.zowe.apiml.product.routing.RoutedServices;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.ToString;
+import org.zowe.apiml.config.ApiInfo;
+import org.zowe.apiml.product.routing.RoutedServices;
 
 /**
  * Contains all necessary information to create API Documentation

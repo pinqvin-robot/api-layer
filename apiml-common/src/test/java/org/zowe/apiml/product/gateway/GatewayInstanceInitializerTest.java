@@ -9,8 +9,6 @@
  */
 package org.zowe.apiml.product.gateway;
 
-import org.zowe.apiml.product.constants.CoreService;
-import org.zowe.apiml.product.instance.lookup.InstanceLookupExecutor;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.EurekaClient;
 import com.netflix.discovery.shared.Application;
@@ -23,12 +21,14 @@ import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.zowe.apiml.product.constants.CoreService;
+import org.zowe.apiml.product.instance.lookup.InstanceLookupExecutor;
 
 import java.util.Collections;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.when;
 
 
 @RunWith(SpringRunner.class)

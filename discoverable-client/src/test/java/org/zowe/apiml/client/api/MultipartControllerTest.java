@@ -10,11 +10,11 @@
 
 package org.zowe.apiml.client.api;
 
-import org.zowe.apiml.client.model.UploadFileResponse;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.http.MediaType;
 import org.springframework.mock.web.MockMultipartFile;
+import org.zowe.apiml.client.model.UploadFileResponse;
 
 import static org.junit.Assert.assertEquals;
 

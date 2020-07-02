@@ -9,9 +9,9 @@
  */
 package org.zowe.apiml.gateway.filters.post;
 
-import org.zowe.apiml.security.common.config.AuthConfigurationProperties;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
+import org.zowe.apiml.security.common.config.AuthConfigurationProperties;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;

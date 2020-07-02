@@ -9,12 +9,12 @@
  */
 package org.zowe.apiml.security.common.handler;
 
-import org.zowe.apiml.security.common.error.AuthExceptionHandler;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
+import org.zowe.apiml.security.common.error.AuthExceptionHandler;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

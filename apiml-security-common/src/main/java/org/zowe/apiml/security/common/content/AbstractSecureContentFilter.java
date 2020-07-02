@@ -9,7 +9,6 @@
  */
 package org.zowe.apiml.security.common.content;
 
-import org.zowe.apiml.security.common.error.ResourceAccessExceptionHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.lang.NonNull;
 import org.springframework.security.authentication.AbstractAuthenticationToken;
@@ -19,6 +18,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.web.filter.OncePerRequestFilter;
+import org.zowe.apiml.security.common.error.ResourceAccessExceptionHandler;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;

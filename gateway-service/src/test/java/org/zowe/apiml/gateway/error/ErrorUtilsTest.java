@@ -9,12 +9,12 @@
  */
 package org.zowe.apiml.gateway.error;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.mock.web.MockHttpServletRequest;
 
 import javax.servlet.RequestDispatcher;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ErrorUtilsTest {
     @Test

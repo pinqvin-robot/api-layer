@@ -9,17 +9,15 @@
  */
 package org.zowe.apiml.gateway.filters.pre;
 
-import org.zowe.apiml.product.routing.RoutedService;
-import org.zowe.apiml.product.routing.RoutedServices;
 import com.netflix.zuul.context.RequestContext;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.zowe.apiml.product.routing.RoutedService;
+import org.zowe.apiml.product.routing.RoutedServices;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.PROXY_KEY;
-import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.REQUEST_URI_KEY;
-import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.SERVICE_ID_KEY;
+import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.*;
 
 public class LocationFilterTest {
 

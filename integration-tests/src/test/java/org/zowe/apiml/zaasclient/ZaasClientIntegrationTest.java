@@ -25,8 +25,8 @@ import org.zowe.apiml.zaasclient.exception.ZaasClientErrorCodes;
 import org.zowe.apiml.zaasclient.exception.ZaasClientException;
 import org.zowe.apiml.zaasclient.exception.ZaasConfigurationException;
 import org.zowe.apiml.zaasclient.service.ZaasClient;
-import org.zowe.apiml.zaasclient.service.internal.ZaasClientHttps;
 import org.zowe.apiml.zaasclient.service.ZaasToken;
+import org.zowe.apiml.zaasclient.service.internal.ZaasClientHttps;
 
 import java.io.File;
 import java.io.FileInputStream;

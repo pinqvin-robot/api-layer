@@ -16,7 +16,8 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
 import org.junit.jupiter.api.Test;
 import org.zowe.apiml.util.categories.SlowTests;
-import org.zowe.apiml.util.categories.TestsNotMeantForZowe;import org.zowe.apiml.util.http.HttpClientUtils;
+import org.zowe.apiml.util.categories.TestsNotMeantForZowe;
+import org.zowe.apiml.util.http.HttpClientUtils;
 
 import java.io.IOException;
 import java.net.URI;

@@ -9,11 +9,6 @@
  */
 package org.zowe.apiml.enable.register;
 
-import org.zowe.apiml.enable.EnableApiDiscovery;
-import org.zowe.apiml.enable.config.EnableApiDiscoveryConfig;
-import org.zowe.apiml.eurekaservice.client.ApiMediationClient;
-import org.zowe.apiml.eurekaservice.client.config.ApiMediationServiceConfig;
-import org.zowe.apiml.exception.ServiceDefinitionException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,10 +17,16 @@ import org.springframework.boot.test.context.ConfigFileApplicationContextInitial
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.zowe.apiml.enable.EnableApiDiscovery;
+import org.zowe.apiml.enable.config.EnableApiDiscoveryConfig;
+import org.zowe.apiml.eurekaservice.client.ApiMediationClient;
+import org.zowe.apiml.eurekaservice.client.config.ApiMediationServiceConfig;
+import org.zowe.apiml.exception.ServiceDefinitionException;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 
 
 @RunWith(SpringRunner.class)

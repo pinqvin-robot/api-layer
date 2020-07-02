@@ -9,9 +9,6 @@
  */
 package org.zowe.apiml.security.common.content;
 
-import org.zowe.apiml.security.common.config.AuthConfigurationProperties;
-import org.zowe.apiml.security.common.error.ResourceAccessExceptionHandler;
-import org.zowe.apiml.security.common.token.TokenAuthentication;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.mock.web.MockHttpServletRequest;
@@ -21,6 +18,9 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
+import org.zowe.apiml.security.common.config.AuthConfigurationProperties;
+import org.zowe.apiml.security.common.error.ResourceAccessExceptionHandler;
+import org.zowe.apiml.security.common.token.TokenAuthentication;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;

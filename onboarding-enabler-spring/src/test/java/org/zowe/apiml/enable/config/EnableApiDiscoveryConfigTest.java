@@ -9,9 +9,9 @@
  */
 package org.zowe.apiml.enable.config;
 
+import org.junit.Test;
 import org.zowe.apiml.message.core.Message;
 import org.zowe.apiml.message.core.MessageService;
-import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
 

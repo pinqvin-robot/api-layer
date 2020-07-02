@@ -1,5 +1,5 @@
 import userConstants from '../constants/user-constants';
-import { userService } from '../services';
+import {userService} from '../services';
 import history from '../helpers/history';
 
 function login(credentials) {

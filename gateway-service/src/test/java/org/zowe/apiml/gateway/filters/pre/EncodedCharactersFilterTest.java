@@ -35,7 +35,8 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.when;
-import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.*;
+import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.PROXY_KEY;
+import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.SERVICE_ID_KEY;
 
 
 
