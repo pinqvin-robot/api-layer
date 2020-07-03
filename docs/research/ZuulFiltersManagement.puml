@@ -1,0 +1,20 @@
+@startuml
+Actor SpringCloudZuul as SCZ
+Actor FiltersEndpoint as FEP
+Actor FilterRegistry as FRE
+Actor ZuulProxyAutoConfiguration as ZPAC
+Actor EndpointConfiguration as EPC
+Actor ZuulFilterInitializer as ZFI
+
+SCZ -> ZPAC: filtersEndpoint
+activate ZPAC
+ZPAC --> FRE: getIntance
+ZPAC -> FEP: Create
+deactivate
+
+SCZ -> ZFI: contextInitialized
+ZFI -> FRE: addFilters
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: another authentication Response
+@enduml

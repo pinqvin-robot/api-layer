@@ -52,7 +52,12 @@ public class GatewayApplication implements ApplicationListener<ApplicationReadyE
         app.addInitializers(new LatencyUtilsConfigInitializer());
         app.setLogStartupInfo(false);
         new BuildInfo().logBuildInfo();
-        app.run(args);
+
+        //ClassPathResource cpr = new ClassPathResource("groovy/ExampleSurgicalDebugFilterBean.groovy");
+        //Thread.currentThread().getContextClassLoader().loadClass()
+        //Class[] sources = {GatewayApplication.class}; //,
+
+        app.run(/*sources, */args);
     }
 
     @Override

@@ -95,6 +95,12 @@ zuul:
     forceOriginalQueryStringEncoding: true
     retryable: true
 
+    groovyFiltersPath:
+        - config/local/gateway/groovy/pre
+        - config/local/gateway/groovy/route
+        - config/local/gateway/groovy/post
+
+
 ribbon:
     ConnectTimeout: ${apiml.gateway.timeoutMillis}
     ReadTimeout: ${apiml.gateway.timeoutMillis}

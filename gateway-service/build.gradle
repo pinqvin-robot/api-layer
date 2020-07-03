@@ -45,8 +45,10 @@ configurations.all {
 }
 
 dependencies {
+
     compile(project(':apiml-security-common'))
-    compile libraries.spring_cloud_starter_zuul
+    implementation libraries.spring_cloud_starter_zuul
+    compile 'org.codehaus.groovy:groovy-all:3.0.3'
     compile libraries.spring_boot_starter_actuator
     compile libraries.spring_boot_starter_web
     compile libraries.spring_boot_starter_websocket
