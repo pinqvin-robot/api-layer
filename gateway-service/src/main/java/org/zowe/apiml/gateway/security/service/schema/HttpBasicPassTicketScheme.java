@@ -13,6 +13,7 @@ import com.netflix.appinfo.InstanceInfo;
 import com.netflix.zuul.context.RequestContext;
 import lombok.EqualsAndHashCode;
 import lombok.Value;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.http.Header;
 import org.apache.http.HttpHeaders;
 import org.apache.http.HttpRequest;
@@ -36,6 +37,7 @@ import java.util.function.Supplier;
  * SAF and generating new authentication header in request.
  */
 @Component
+@Slf4j
 public class HttpBasicPassTicketScheme implements AbstractAuthenticationScheme {
 
     private final PassTicketService passTicketService;
@@ -60,17 +62,20 @@ public class HttpBasicPassTicketScheme implements AbstractAuthenticationScheme {
     public AuthenticationCommand createCommand(Authentication authentication, Supplier<QueryResponse> tokenSupplier) {
         final long before = System.currentTimeMillis();
         final QueryResponse token = tokenSupplier.get();
-
+        log.debug(authentication.toString());
         if (token == null) {
             return AuthenticationCommand.EMPTY;
         }
 
         final String applId = authentication.getApplid();
         final String userId = token.getUserId();
+        log.debug("APPLID {} , USERID {}", applId,userId);
         String passTicket;
         try {
             passTicket = passTicketService.generate(userId, applId);
+            log.debug("Passticket: {}",passTicket);
         } catch (IRRPassTicketGenerationException e) {
+            log.debug(String.format("Could not generate PassTicket for user ID %s and APPLID %s", userId, applId));
             throw new PassTicketException(
                 String.format("Could not generate PassTicket for user ID %s and APPLID %s", userId, applId), e
             );

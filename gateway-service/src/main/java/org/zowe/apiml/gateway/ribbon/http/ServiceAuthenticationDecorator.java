@@ -13,6 +13,7 @@ package org.zowe.apiml.gateway.ribbon.http;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.zuul.context.RequestContext;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpRequest;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.AuthenticationException;
@@ -26,6 +27,7 @@ import org.zowe.apiml.security.common.auth.Authentication;
 import static org.zowe.apiml.gateway.security.service.ServiceAuthenticationServiceImpl.AUTHENTICATION_COMMAND_KEY;
 
 @RequiredArgsConstructor
+@Slf4j
 public class ServiceAuthenticationDecorator {
 
     private final ServiceAuthenticationService serviceAuthenticationService;
@@ -58,7 +60,7 @@ public class ServiceAuthenticationDecorator {
                 final String jwtToken = authenticationService.getJwtTokenFromRequest(context.getRequest()).orElse(null);
 
                 cmd = serviceAuthenticationService.getAuthenticationCommand(authentication, jwtToken);
-
+//                log.debug(cmd.);
                 if (cmd == null) {
                     return;
                 }
