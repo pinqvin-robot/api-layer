@@ -99,6 +99,7 @@ zuul:
         - config/local/gateway/groovy/pre
         - config/local/gateway/groovy/route
         - config/local/gateway/groovy/post
+        - config/local/gateway/groovy/error
 
 
 ribbon:

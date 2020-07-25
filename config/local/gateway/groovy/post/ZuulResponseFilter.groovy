@@ -35,8 +35,6 @@ import org.slf4j.LoggerFactory
 
 import javax.servlet.http.HttpServletResponse
 
-import static com.netflix.zuul.constants.ZuulHeaders.*
-
 class ZuulResponseFilter extends ZuulFilter {
     private static final Logger logger = LoggerFactory.getLogger(ZuulResponseFilter.class)
 
@@ -50,7 +48,7 @@ class ZuulResponseFilter extends ZuulFilter {
 
     @Override
     int filterOrder() {
-        return 999
+        return 998
     }
 
     @Override
@@ -77,7 +75,7 @@ class ZuulResponseFilter extends ZuulFilter {
 
         } finally {
             try {
-                is?.close()
+                //is?.close()
                 outStream.flush()
                 outStream.close()
             } catch (IOException e) {
@@ -92,22 +90,22 @@ class ZuulResponseFilter extends ZuulFilter {
 
         rd = (List<String>) RequestContext.getCurrentContext().get("routingDebug")
         rd?.each {
-            println("ZUUL_DEBUG::${it}")
+            logger.debug("ZUUL_DEBUG::${it}")
         }
 
-        if (response.getStatus() >= 400 && context.getError() != null) {
+        /*if (context.getResponse().getStatus() >= 400 && context.getError() != null) {
             Throwable error = context.getError()
             headers.set(X_ZUUL_ERROR_CAUSE,
                     error instanceof ZuulException ? ((ZuulException) error).getErrorCause() : "UNKNOWN_CAUSE")
+        }*/
+
+        if (servletResponse.status >= 400) {
+            logger.debug("HTTP response error ") //, context.getResponse().getStatus(), context.requestURI)
         }
 
-        if (response.getStatus() >= 500) {
-            logger.info("Passport: {}", CurrentPassport.fromSessionContext(context))
-        }
-
-        if (logger.isDebugEnabled()) {
+        /*if (logger.isDebugEnabled()) {
             logger.debug("Filter execution summary :: {}", context.getFilterExecutionSummary())
-        }
+        }*/
     }
 
     private void addResponseHeaders() {
