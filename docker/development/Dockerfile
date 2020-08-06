@@ -33,6 +33,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN cd /var/src \
     && git clone https://github.com/zowe/api-layer.git \
     && cd /var/src/api-layer \
+    && git checkout private/jb892003/withoutCorsTests
     && export NVM_DIR="$HOME/.nvm" \
     && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  \
     && [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  \
