@@ -16,6 +16,7 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.eclipse.jetty.util.ssl.SslContextFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -36,6 +37,7 @@ import java.util.function.Supplier;
 
 @Slf4j
 @Configuration
+@RefreshScope
 public class HttpConfig {
     @Value("${server.ssl.protocol:TLSv1.2}")
     private String protocol;
@@ -81,6 +83,7 @@ public class HttpConfig {
     private SSLContext secureSslContext;
     private HostnameVerifier secureHostnameVerifier;
     private EurekaJerseyClientBuilder eurekaJerseyClientBuilder;
+    private HttpsFactory factory;
 
     @InjectApimlLogger
     private ApimlLogger apimlLog = ApimlLogger.empty();
@@ -105,7 +108,7 @@ public class HttpConfig {
 
             log.info("Using HTTPS configuration: {}", httpsConfig.toString());
 
-            HttpsFactory factory = new HttpsFactory(httpsConfig);
+            factory = new HttpsFactory(httpsConfig);
             secureHttpClient = factory.createSecureHttpClient();
             secureSslContext = factory.createSslContext();
             secureHostnameVerifier = factory.createHostnameVerifier();
@@ -114,14 +117,13 @@ public class HttpConfig {
             HttpsFactory factoryWithoutKeystore = new HttpsFactory(httpsConfigWithoutKeystore);
             secureHttpClientWithoutKeystore = factoryWithoutKeystore.createSecureHttpClient();
 
+
             factory.setSystemSslProperties();
 
             publicKeyCertificatesBase64 = SecurityUtils.loadCertificateChainBase64(httpsConfig);
-        }
-        catch (HttpsConfigError e) {
+        } catch (HttpsConfigError e) {
             System.exit(1); // NOSONAR
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             apimlLog.log("org.zowe.apiml.common.unknownHttpsConfigError", e.getMessage());
             System.exit(1); // NOSONAR
         }
@@ -134,6 +136,7 @@ public class HttpConfig {
     }
 
     @Bean
+    @RefreshScope
     public SslContextFactory jettySslContextFactory() {
         SslContextFactory sslContextFactory = new SslContextFactory(SecurityUtils.replaceFourSlashes(keyStore));
         sslContextFactory.setProtocol(protocol);
@@ -164,8 +167,10 @@ public class HttpConfig {
      */
     @Bean
     @Primary
+    @RefreshScope
     @Qualifier("restTemplateWithKeystore")
     public RestTemplate restTemplateWithKeystore() {
+        init();
         HttpComponentsClientHttpRequestFactory factory = new HttpComponentsClientHttpRequestFactory(secureHttpClient);
         return new RestTemplate(factory);
     }
@@ -187,25 +192,31 @@ public class HttpConfig {
      * @return HttpClient which doesn't use a certificate to authenticate
      */
     @Bean
+    @RefreshScope
     @Primary
     @Qualifier("secureHttpClientWithKeystore")
     public CloseableHttpClient secureHttpClient() {
-        return secureHttpClient;
+        return factory.createSecureHttpClient();
     }
 
     /**
      * @return HttpClient, which doesn't use a certificate to authenticate
      */
     @Bean
+    @RefreshScope
     @Qualifier("secureHttpClientWithoutKeystore")
     public CloseableHttpClient secureHttpClientWithoutKeystore() {
         return secureHttpClientWithoutKeystore;
     }
 
+
+    //    Is there any usage for this bean?
     @Bean
+    @RefreshScope
     public SSLContext secureSslContext() {
         return secureSslContext;
     }
+
 
     @Bean
     public HostnameVerifier secureHostnameVerifier() {
