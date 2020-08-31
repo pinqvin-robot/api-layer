@@ -7,11 +7,11 @@ RUN install_clean build-essential wget software-properties-common openjdk-8-jdk 
         wget libgtk2.0-0 libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
 
 # Install Node related dependencies
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash \
+RUN curl -o- -k https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash \
     && export NVM_DIR="$HOME/.nvm" \
     && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  \
     && [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  \
-    && nvm install v12.16.1 \
+    && nvm install lts/erbium \
     && npm add -g pnpm \
     && npm install -g concurrently
 
@@ -36,7 +36,7 @@ RUN cd /var/src \
     && export NVM_DIR="$HOME/.nvm" \
     && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  \
     && [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  \
-    && nvm use v12.16.1 \
+    && nvm use lts/erbium \
     && cd /var/src/api-layer/api-catalog-ui/frontend/; pnpm install; cd ../.. \
     && ./gradlew clean build
 
